@@ -1,6 +1,8 @@
 # CLASH
 Tutorial &amp; Config Clash for Android
 
+khusus paket unlimax telkomsel
+
 DOWNLOAD aplikasinya
 <a href="https://github.com/Kr328/ClashForAndroid/releases">disini</a>
 
