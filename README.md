@@ -25,3 +25,5 @@ install dan buka aplikasinya
 - save dan tinggal pencet start
 
 dah gitu aja, kalo gak paham lanjut ke <a href="https://wa.me/6285654602469">Whatsapp</a>
+
+tapi gak gue bales awokawok
