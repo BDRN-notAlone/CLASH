@@ -2,9 +2,12 @@
 Tutorial &amp; Config Clash for Android
 
 khusus paket unlimax telkomsel
-- <a href="https://wa.me/6285654602469">18K</a> wa tt line spotify
-- <a href="https://wa.me/6285654602469">28K</a> wa ig tt fb line spotify
-- <a href="https://wa.me/6285654602469">68K</a> wa ig tt fb yt line spotify
+- <a href="https://my.telkomsel.com/app/payment-method?link=265db711a4ba8a88855cef9b013a811cd6804b3c5ff888e04048a9c1b7dd0669fcda2592a6aa9e3eda826f3e6b9995c7">18K</a>
+ WhatsApp, Line, GamesMAX dan Tiktok
+- <a href="https://my.telkomsel.com/app/payment-method?link=d9b51e2bc6b7b7cccbbd0181d332e64db06a45ac3e7e5096a17cceb8c7c03f41631e9124693247ce69d28fe4d5b0b043">28K</a> 
+ Facebook, Instagram, WhatsApp, Line, GamesMAX, MusicMAX dan Tiktok
+- <a href="https://my.telkomsel.com/app/payment-method?link=a08ba23f14a1d6af8fc66ac5d1350f66bd7bb587e06b8441147cb89ae3158971f83f11973a97f4b6c8f5543db0461f21">68K</a> 
+ Facebook, Instagram, WhatsApp, Line, GamesMAX, MusicMAX, Tiktok, dan YouTube
 
 DOWNLOAD aplikasinya
 <a href="https://github.com/Kr328/ClashForAndroid/releases">disini</a>
