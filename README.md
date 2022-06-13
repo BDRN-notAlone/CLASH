@@ -17,7 +17,7 @@ install dan buka aplikasinya
 - pilih profile
 - tekan ikon +
 - pilih import from url
-- salin link ini https://raw.githubusercontent.com/BDRN-notAlone/CLASH/main/config.yaml
+- salin link ini https://raw.githubusercontent.com/BDRN-notAlone/CLASH-android/main/config.yaml
 - kemudian tempel di kolom url
 - auto update isi 1080
 - untuk name isi terserah kalian
