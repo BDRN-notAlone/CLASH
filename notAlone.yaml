@@ -124,6 +124,7 @@ dns:
     - "*.ffxiv.com"
     - "*.mcdn.bilivideo.cn"
     - +.media.dssott.com
+
 proxies:
   - {name: Weekly Trojan, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: 4f379560-f21a-11ec-914e-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
   - {name: Weekly Trojan 2, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: 67ce1700-f21a-11ec-8deb-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
