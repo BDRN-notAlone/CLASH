@@ -126,26 +126,18 @@ dns:
     - +.media.dssott.com
 
 proxies:
-  - {name: ID Rackh ALTERNATIVE, server: id-rackhtj.bonds.id, port: 443, udp: true, type: trojan, password: bc6accb0-ea17-11ec-a0d7-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
-  - {name: SG-HE 1 ALTERNATIVE, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: cae66ec0-ea17-11ec-a178-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
-  - {name: ID-Biznet Jakarta ALTERNATIVE, server: id2-trojan.bonds.id, port: 443, udp: true, type: trojan, password: df574740-ea17-11ec-b399-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
-  - {name: ID Rackh MAIN, server: id-rackhtj.bonds.id, port: 443, udp: true, type: trojan, password: bc6accb0-ea17-11ec-a0d7-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
-  - {name: SG-HE 1 MAIN, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: cae66ec0-ea17-11ec-a178-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
-  - {name: ID-Biznet Jakarta MAIN, server: id2-trojan.bonds.id, port: 443, udp: true, type: trojan, password: df574740-ea17-11ec-b399-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
-  - {name: ALTERNATIVE, server: trojan1.udpgw.com, port: 443, udp: true, type: trojan, password: 9bd5f600-e792-11ec-bfdd-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
-  - {name: MAIN, server: trojan1.udpgw.com, port: 443, udp: true, type: trojan, password: bb3b3440-e792-11ec-ba75-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
+  - {name: sapi 🐄, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: 9ba794d0-f261-11ec-9296-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
+  - {name: kambing 🐐, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: adf39fe0-f261-11ec-9f67-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
+
 proxy-groups:
   - name: PROXY
-    type: select
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
     proxies:
-      - MAIN
-      - ALTERNATIVE
-      - SG-HE 1 MAIN
-      - SG-HE 1 ALTERNATIVE
-      - ID Rackh MAIN
-      - ID Rackh ALTERNATIVE
-      - ID-Biznet Jakarta MAIN
-      - ID-Biznet Jakarta ALTERNATIVE
+      - sapi 🐄
+      - kambing 🐐
+
   - name: FACEBOOK
     type: select
     proxies:
