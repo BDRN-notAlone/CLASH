@@ -124,31 +124,35 @@ dns:
     - "*.ffxiv.com"
     - "*.mcdn.bilivideo.cn"
     - +.media.dssott.com
-
 proxies:
-  - {name: SG-HE 1 Trojan VPN, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 5100a600-e624-11ec-84c5-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
-  - {name: SG-HE 1 Trojan VPN 2, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 5d6a5f20-e624-11ec-91fc-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
+  - {name: Weekly Trojan, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: 4f379560-f21a-11ec-914e-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
+  - {name: Weekly Trojan 2, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: 67ce1700-f21a-11ec-8deb-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
+  - {name: SG-HE 1 Trojan VPN, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 8bcec280-f21a-11ec-824f-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
+  - {name: SG-HE 1 Trojan VPN 2, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 9473b700-f21a-11ec-a984-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
+  - {name: ID-Biznet Jakarta Trojan, server: id2-trojan.bonds.id, port: 443, udp: true, type: trojan, password: afc717b0-f21a-11ec-9e5c-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
+  - {name: ID-Biznet Jakarta Trojan 2, server: id2-trojan.bonds.id, port: 443, udp: true, type: trojan, password: b892f480-f21a-11ec-b565-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
+  - {name: ID Netara Tifa Trojan, server: idtj-tifa.bonds.id, port: 443, udp: true, type: trojan, password: e26fb7c0-f21a-11ec-8047-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
+  - {name: ID Netara Tifa Trojan 2, server: idtj-tifa.bonds.id, port: 443, udp: true, type: trojan, password: f0a4efc0-f21a-11ec-ba96-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
   - {name: ID Rackh Trojan 2, server: id-rackhtj.bonds.id, port: 443, udp: true, type: trojan, password: 6c7c5f30-e624-11ec-9d6a-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
   - {name: ID Rackh Trojan, server: id-rackhtj.bonds.id, port: 443, udp: true, type: trojan, password: 77f5eef0-e624-11ec-aecf-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
-  - {name: ID-Biznet Jakarta Trojan, server: id2-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 9a93f420-e624-11ec-ad16-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
-  - {name: ID-Biznet Jakarta Trojan 2, server: id2-trojan.bonds.id, port: 443, udp: true, type: trojan, password: a39e6f60-e624-11ec-bf75-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
-  - {name: Weekly Trojan, server: trojan1.udpgw.com, port: 443, udp: true, type: trojan, password: 6fd70cf0-e77a-11ec-a29e-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
-  - {name: Weekly Trojan 2, server: trojan1.udpgw.com, port: 443, udp: true, type: trojan, password: 82ff4840-e77a-11ec-bfb3-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
 
 proxy-groups:
-  - name: PROXY
-    type: select
-    url: http://hi.bonds.id/ping
+  - name: howdy-trojan
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     proxies:
-      - SG-HE 1 Trojan VPN
-      - SG-HE 1 Trojan VPN 2
-      - ID Rackh Trojan
-      - ID Rackh Trojan 2
-      - ID-Biznet Jakarta Trojan
-      - ID-Biznet Jakarta Trojan 2
       - Weekly Trojan
       - Weekly Trojan 2
+      - SG-HE 1 Trojan VPN
+      - SG-HE 1 Trojan VPN 2
+      - ID-Biznet Jakarta Trojan
+      - ID-Biznet Jakarta Trojan 2
+      - ID Netara Tifa Trojan
+      - ID Netara Tifa Trojan 2
+      - ID Rackh Trojan
+      - ID Rackh Trojan 2
+
   - name: ADS
     type: select
     proxies:
