@@ -137,8 +137,8 @@ proxies:
   - {name: ID Rackh Trojan, server: id-rackhtj.bonds.id, port: 443, udp: true, type: trojan, password: 77f5eef0-e624-11ec-aecf-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
 
 proxy-groups:
-  - name: howdy-trojan
-    type: url-test
+  - name: PROXY
+    type: select
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     proxies:
