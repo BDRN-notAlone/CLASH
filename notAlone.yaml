@@ -134,8 +134,6 @@ proxies:
   - {name: ID-Biznet Jakarta Trojan 2, server: id2-trojan.bonds.id, port: 443, udp: true, type: trojan, password: b892f480-f21a-11ec-b565-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
   - {name: ID Netara Tifa Trojan, server: idtj-tifa.bonds.id, port: 443, udp: true, type: trojan, password: e26fb7c0-f21a-11ec-8047-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
   - {name: ID Netara Tifa Trojan 2, server: idtj-tifa.bonds.id, port: 443, udp: true, type: trojan, password: f0a4efc0-f21a-11ec-ba96-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
-  - {name: ID Rackh Trojan 2, server: id-rackhtj.bonds.id, port: 443, udp: true, type: trojan, password: 6c7c5f30-e624-11ec-9d6a-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
-  - {name: ID Rackh Trojan, server: id-rackhtj.bonds.id, port: 443, udp: true, type: trojan, password: 77f5eef0-e624-11ec-aecf-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
 
 proxy-groups:
   - name: PROXY
@@ -151,8 +149,6 @@ proxy-groups:
       - ID-Biznet Jakarta Trojan 2
       - ID Netara Tifa Trojan
       - ID Netara Tifa Trojan 2
-      - ID Rackh Trojan
-      - ID Rackh Trojan 2
 
   - name: ADS
     type: select
