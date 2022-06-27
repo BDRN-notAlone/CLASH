@@ -131,7 +131,7 @@ proxies:
 
 proxy-groups:
   - name: PROXY
-    type: url-test
+    type: select
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     proxies:
