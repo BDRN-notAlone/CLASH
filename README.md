@@ -9,6 +9,7 @@ ada juga buat XL paket flex
  Facebook, Instagram, WhatsApp, Line, GamesMAX, MusicMAX dan Tiktok
 - <a href="https://my.telkomsel.com/app/payment-method?link=a08ba23f14a1d6af8fc66ac5d1350f66bd7bb587e06b8441147cb89ae3158971f83f11973a97f4b6c8f5543db0461f21">68K</a> 
  Facebook, Instagram, WhatsApp, Line, GamesMAX, MusicMAX, Tiktok, dan YouTube
+- paketnya dah gak bisa lagi awok awok mampus 🤣
 
 ## paket flex xl 
 bisa beli di konter atau via jasa tembak
