@@ -1,5 +1,6 @@
 ## Tutorial &amp; Config Clash for Android
 khusus untuk Telkomsel paket unlimax ataupun tiktok
+ada juga buat XL paket flex
 
 ## link paket unlimax telkomsel
 - <a href="https://my.telkomsel.com/app/payment-method?link=265db711a4ba8a88855cef9b013a811cd6804b3c5ff888e04048a9c1b7dd0669fcda2592a6aa9e3eda826f3e6b9995c7">18K</a>
@@ -8,6 +9,9 @@ khusus untuk Telkomsel paket unlimax ataupun tiktok
  Facebook, Instagram, WhatsApp, Line, GamesMAX, MusicMAX dan Tiktok
 - <a href="https://my.telkomsel.com/app/payment-method?link=a08ba23f14a1d6af8fc66ac5d1350f66bd7bb587e06b8441147cb89ae3158971f83f11973a97f4b6c8f5543db0461f21">68K</a> 
  Facebook, Instagram, WhatsApp, Line, GamesMAX, MusicMAX, Tiktok, dan YouTube
+
+## paket flex xl 
+bisa beli di konter atau via jasa tembak
 
 ## DOWNLOAD
 bisa download di <a href="https://play.google.com/store/apps/details?id=com.github.kr328.clash">playstore</a> atau <a href="https://github.com/Kr328/ClashForAndroid/releases">disini</a>
