@@ -126,8 +126,8 @@ dns:
     - +.media.dssott.com
 
 proxies:
-  - {name: sapi 🐄, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: 9ba794d0-f261-11ec-9296-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
-  - {name: kambing 🐐, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: adf39fe0-f261-11ec-9f67-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
+  - {name: TELKOMSEL, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: 9ba794d0-f261-11ec-9296-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
+  - {name: XL, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: adf39fe0-f261-11ec-9f67-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
 
 proxy-groups:
   - name: PROXY
@@ -135,8 +135,8 @@ proxy-groups:
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     proxies:
-      - sapi 🐄
-      - kambing 🐐
+      - TELKOMSEL 
+      - XL
 
   - name: FACEBOOK
     type: select
