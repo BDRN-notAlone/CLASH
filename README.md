@@ -11,12 +11,12 @@ ada juga buat XL paket flex
  Facebook, Instagram, WhatsApp, Line, GamesMAX, MusicMAX, Tiktok, dan YouTube
 - paketnya dah gak bisa lagi awok awok mampus 🤣
 
-## paket flex xl 
-bisa beli di konter atau via jasa tembak
-
-## DOWNLOAD
+## paket flex xl
+- bisa beli di konter atau via jasa tembak
+- limit pemakaian ±3gb/hari
+## DOWNLOAD aplikasi Clash
 bisa download di <a href="https://play.google.com/store/apps/details?id=com.github.kr328.clash">playstore</a> atau <a href="https://github.com/Kr328/ClashForAndroid/releases">disini</a>
-pilih yang premium universal release
+sesuaikan dengan chipset hp kalian atau bisa pilih yang premium universal release
 ### TUTORIAL PENGGUNAAN
 install dan buka aplikasinya
 - pilih profile
