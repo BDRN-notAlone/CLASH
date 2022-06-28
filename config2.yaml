@@ -144,6 +144,19 @@ proxy-groups:
       - ID-Biznet Jakarta Trojan
       - ID-Biznet Jakarta Trojan 83
 
+  - name: ADS
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+      - PROXY
+rule-providers:
+  reject:
+    type: file
+    behavior: domain
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
+    path: "./provider/reject.yaml"
+    interval: 86400
     
 rules:
 - MATCH,PROXY
