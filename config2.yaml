@@ -126,17 +126,24 @@ dns:
     - +.media.dssott.com
 
 proxies:
-  - {name: sapi 🐄, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: 9ba794d0-f261-11ec-9296-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
-  - {name: kambing 🐐, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: adf39fe0-f261-11ec-9f67-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
+  - {name: trojan2.udpgw.com, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: 973ef350-f6a5-11ec-9274-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
+  - {name: trojan2.udpgw.com 96, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: b91ced00-f6a5-11ec-aaac-1239d0255272, sni: line-sec.co.jp, skip-cert-verify: true}
+  - {name: SG-HE 1 Trojan VPN, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: e8697230-f6a5-11ec-b38d-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
+  - {name: SG-HE 1 Trojan VPN 93, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: f4ea33a0-f6a5-11ec-9733-1239d0255272, sni: line-sec.co.jp, skip-cert-verify: true}
+  - {name: ID-Biznet Jakarta Trojan, server: id2-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 0c79e260-f6a6-11ec-80d1-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
+  - {name: ID-Biznet Jakarta Trojan 83, server: id2-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 16004f10-f6a6-11ec-997b-1239d0255272, sni: line-sec.co.jp, skip-cert-verify: true}
 
 proxy-groups:
   - name: PROXY
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
+    type: select
     proxies:
-      - sapi 🐄
-      - kambing 🐐
+      - trojan2.udpgw.com
+      - trojan2.udpgw.com 96
+      - SG-HE 1 Trojan VPN
+      - SG-HE 1 Trojan VPN 93
+      - ID-Biznet Jakarta Trojan
+      - ID-Biznet Jakarta Trojan 83
+
     
 rules:
 - MATCH,PROXY
