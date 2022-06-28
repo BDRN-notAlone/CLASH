@@ -159,4 +159,5 @@ rule-providers:
     interval: 86400
     
 rules:
+- RULE-SET,reject,ADS
 - MATCH,PROXY
