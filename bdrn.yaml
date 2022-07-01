@@ -126,8 +126,8 @@ dns:
     - +.media.dssott.com
 
 proxies:
-  - {name: ID-BIZNET V2RAY, server: zendesk3.shopee.tw, port: 80, type: vmess, uuid: 9202b80a-0355-447e-bbfe-27d5d92f9d20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: id3.v2-ray.com, network: ws, ws-opts: {path: /fastssh/notalone2/62bebc5407c98/, headers: {Host: id3.v2-ray.com}}, udp: true}
-  - {name: SG-HE 1 V2RAY, server: zendesk3.shopee.tw, port: 80, type: vmess, uuid: a0cbf383-de04-469b-8e0f-df7b0306d825, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: sg1.v2-ray.com, network: ws, ws-opts: {path: /fastssh/notalone2/62bebcbb6335a/, headers: {Host: sg1.v2-ray.com}}, udp: true}
+  - {name: ID-BIZNET V2RAY, server: zendesk1.grabtaxi.com, port: 80, type: vmess, uuid: 9202b80a-0355-447e-bbfe-27d5d92f9d20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: id3.v2-ray.com, network: ws, ws-opts: {path: /fastssh/notalone2/62bebc5407c98/, headers: {Host: id3.v2-ray.com}}, udp: true}
+  - {name: SG-HE 1 V2RAY, server: zendesk1.grabtaxi.com, port: 80, type: vmess, uuid: a0cbf383-de04-469b-8e0f-df7b0306d825, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: sg1.v2-ray.com, network: ws, ws-opts: {path: /fastssh/notalone2/62bebcbb6335a/, headers: {Host: sg1.v2-ray.com}}, udp: true}
   - {name: trojan2.udpgw.com, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: 973ef350-f6a5-11ec-9274-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
   - {name: SG-HE 1 Trojan VPN, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: e8697230-f6a5-11ec-b38d-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
   - {name: ID-Biznet Banten Trojan, server: id5-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 5ed77350-f8d5-11ec-a990-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
