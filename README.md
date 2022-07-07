@@ -1,6 +1,6 @@
 ## Tutorial &amp; Config Clash for Android
 khusus untuk Telkomsel paket unlimax ataupun tiktok
-ada juga buat XL paket flex
+ada juga buat XL yg unli WhatsApp 
 
 ## link paket unlimax telkomsel
 - <a href="https://my.telkomsel.com/app/payment-method?link=265db711a4ba8a88855cef9b013a811cd6804b3c5ff888e04048a9c1b7dd0669fcda2592a6aa9e3eda826f3e6b9995c7">18K</a>
@@ -11,9 +11,10 @@ ada juga buat XL paket flex
  Facebook, Instagram, WhatsApp, Line, GamesMAX, MusicMAX, Tiktok, dan YouTube
 - paketnya dah gak bisa lagi awok awok mampus 🤣
 
-## paket flex xl
-- bisa beli di konter atau via jasa tembak
-- limit pemakaian ±3gb/hari
+## paket XL
+- bisa beli di konter atau via jasa tembak untuk paket flex kalo paket akrab beli di Myxl 
+- limit pemakaian 2gb/hari + 60gb/bulan kalo flex
+- limit paket akrab 25gb/hari untuk sendiri kalo berdua ya bagi dua 25gb nya
 ## DOWNLOAD aplikasi Clash
 bisa download di <a href="https://play.google.com/store/apps/details?id=com.github.kr328.clash">playstore</a> atau <a href="https://github.com/Kr328/ClashForAndroid/releases">disini</a>
 sesuaikan dengan chipset hp kalian atau bisa pilih yang premium universal release
