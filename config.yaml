@@ -126,42 +126,21 @@ dns:
     - +.media.dssott.com
 
 proxies:
-  - {name: TELKOMSEL, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: 9ba794d0-f261-11ec-9296-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
-  - {name: XL, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: adf39fe0-f261-11ec-9f67-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
+  - {name: UNTA 🐫, server: sgovh-trojan.bonds.id, port: 443, udp: true, type: trojan, password: c13db7a0-ffe1-11ec-a7cd-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
+  - {name: DOMBA 🐑, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: cd51e480-ffe1-11ec-b73a-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
+  - {name: KAMBING 🐐, server: idtj-tifa.bonds.id, port: 443, udp: true, type: trojan, password: dffa8080-ffe1-11ec-9b38-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
+  - {name: SAPI 🐄, server: trojan3.udpgw.com, port: 443, udp: true, type: trojan, password: f0e6e700-ffe1-11ec-b51e-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
 
 proxy-groups:
-  - name: PROXY
-    type: select
+  - name: howdy-trojan
+    type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     proxies:
-      - TELKOMSEL 
-      - XL
-
-  - name: FACEBOOK
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-      - PROXY
-  - name: INSTAGRAM
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-      - PROXY
-  - name: TIKTOK
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-      - PROXY
-  - name: WHATSAPP
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-      - PROXY
+      - UNTA 🐫
+      - SAPI 🐄
+      - DOMBA 🐑
+      - KAMBING 🐐
       
 rule-providers:
   rule_reject:
@@ -197,8 +176,8 @@ rule-providers:
     
 rules:
 - RULE-SET,rule_reject,REJECT
-- RULE-SET,Facebook,FACEBOOK
-- RULE-SET,Instagram,INSTAGRAM
-- RULE-SET,TikTok,TIKTOK
-- RULE-SET,Whatsapp,WHATSAPP
+- RULE-SET,Facebook,PROXY 
+- RULE-SET,Instagram,PROXY
+- RULE-SET,TikTok,KAMBING 🐐
+- RULE-SET,Whatsapp,DIRECT
 - MATCH,PROXY
