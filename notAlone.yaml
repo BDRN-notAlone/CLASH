@@ -126,29 +126,31 @@ dns:
     - +.media.dssott.com
 
 proxies:
-  - {name: Weekly Trojan, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: 4f379560-f21a-11ec-914e-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
-  - {name: Weekly Trojan 2, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: 67ce1700-f21a-11ec-8deb-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
-  - {name: SG-HE 1 Trojan VPN, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 8bcec280-f21a-11ec-824f-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
-  - {name: SG-HE 1 Trojan VPN 2, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 9473b700-f21a-11ec-a984-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
-  - {name: ID-Biznet Jakarta Trojan, server: id2-trojan.bonds.id, port: 443, udp: true, type: trojan, password: afc717b0-f21a-11ec-9e5c-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
-  - {name: ID-Biznet Jakarta Trojan 2, server: id2-trojan.bonds.id, port: 443, udp: true, type: trojan, password: b892f480-f21a-11ec-b565-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
-  - {name: ID Netara Tifa Trojan, server: idtj-tifa.bonds.id, port: 443, udp: true, type: trojan, password: e26fb7c0-f21a-11ec-8047-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
-  - {name: ID Netara Tifa Trojan 2, server: idtj-tifa.bonds.id, port: 443, udp: true, type: trojan, password: f0a4efc0-f21a-11ec-ba96-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
+  - {name: trojan3.udpgw.com, server: trojan3.udpgw.com, port: 443, udp: true, type: trojan, password: 2181f050-ff7b-11ec-9ee1-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
+  - {name: trojan3.udpgw.com 65, server: trojan3.udpgw.com, port: 443, udp: true, type: trojan, password: 36be7320-ff7b-11ec-a598-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
+  - {name: ID-Uninet Trojan VPN, server: idtj-uninet.bonds.id, port: 443, udp: true, type: trojan, password: 5f5e4c80-ff7b-11ec-82e1-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
+  - {name: ID-Uninet Trojan VPN 89, server: idtj-uninet.bonds.id, port: 443, udp: true, type: trojan, password: 81495950-ff7b-11ec-a1fe-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
+  - {name: SG-HE 1 Trojan VPN, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: a0344410-ff7b-11ec-b63e-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
+  - {name: SG-HE 1 Trojan VPN 62, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: abd08130-ff7b-11ec-9b64-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
+  - {name: SG Trojan OVH, server: sgovh-trojan.bonds.id, port: 443, udp: true, type: trojan, password: b83fca00-ff7b-11ec-b980-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
+  - {name: SG Trojan OVH 91, server: sgovh-trojan.bonds.id, port: 443, udp: true, type: trojan, password: d58cb0f0-ff7b-11ec-a413-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
+  - {name: ID Netara Tifa Trojan, server: idtj-tifa.bonds.id, port: 443, udp: true, type: trojan, password: ed261960-ff7b-11ec-91d6-1239d0255272, sni: api2-t3.musical.ly, skip-cert-verify: true}
+  - {name: ID Netara Tifa Trojan 4, server: idtj-tifa.bonds.id, port: 443, udp: true, type: trojan, password: f9650d60-ff7b-11ec-8223-1239d0255272, sni: sdk.scdn.co, skip-cert-verify: true}
 
 proxy-groups:
   - name: PROXY
     type: select
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
     proxies:
-      - Weekly Trojan
-      - Weekly Trojan 2
+      - trojan3.udpgw.com
+      - trojan3.udpgw.com 65
+      - ID-Uninet Trojan VPN
+      - ID-Uninet Trojan VPN 89
       - SG-HE 1 Trojan VPN
-      - SG-HE 1 Trojan VPN 2
-      - ID-Biznet Jakarta Trojan
-      - ID-Biznet Jakarta Trojan 2
+      - SG-HE 1 Trojan VPN 62
+      - SG Trojan OVH
+      - SG Trojan OVH 91
       - ID Netara Tifa Trojan
-      - ID Netara Tifa Trojan 2
+      - ID Netara Tifa Trojan 4
 
   - name: ADS
     type: select
