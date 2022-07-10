@@ -177,7 +177,9 @@ rule-providers:
     interval: 86400
     
 rules:
+- RULE-SET,Instagram,REJECT
+- RULE-SET,Facebook,REJECT
 - RULE-SET,rule_reject,REJECT
-- RULE-SET,TikTok,KAMBING 🐐
+- RULE-SET,TikTok,REJECT
 - RULE-SET,Whatsapp,DIRECT
 - MATCH,PROXY
