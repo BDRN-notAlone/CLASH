@@ -1,20 +1,11 @@
 ## Tutorial &amp; Config Clash for Android
-khusus untuk Telkomsel paket unlimax ataupun tiktok
-ada juga buat XL yg unli WhatsApp 
+khusus untuk XL yang ada unli WhatsApp nya
 
-## link paket unlimax telkomsel
-- <a href="https://my.telkomsel.com/app/payment-method?link=265db711a4ba8a88855cef9b013a811cd6804b3c5ff888e04048a9c1b7dd0669fcda2592a6aa9e3eda826f3e6b9995c7">18K</a>
- WhatsApp, Line, GamesMAX dan Tiktok
-- <a href="https://my.telkomsel.com/app/payment-method?link=d9b51e2bc6b7b7cccbbd0181d332e64db06a45ac3e7e5096a17cceb8c7c03f41631e9124693247ce69d28fe4d5b0b043">28K</a> 
- Facebook, Instagram, WhatsApp, Line, GamesMAX, MusicMAX dan Tiktok
-- <a href="https://my.telkomsel.com/app/payment-method?link=a08ba23f14a1d6af8fc66ac5d1350f66bd7bb587e06b8441147cb89ae3158971f83f11973a97f4b6c8f5543db0461f21">68K</a> 
- Facebook, Instagram, WhatsApp, Line, GamesMAX, MusicMAX, Tiktok, dan YouTube
-- paketnya dah gak bisa lagi awok awok mampus 🤣
-
-## paket XL
-- bisa beli di konter atau via jasa tembak untuk paket flex kalo paket akrab beli di Myxl 
-- limit pemakaian 2gb/hari + 60gb/bulan kalo flex
-- limit paket akrab 25gb/hari untuk sendiri kalo berdua ya bagi dua 25gb nya
+## Cara dapat paket XL unli WhatsApp 
+- XL FLEX bisa beli di konter atau via jasa tembak atau beli di saya juga bisa awokawok
+- XL AKRAB bisa beli di Myxl (satu paket bisa untuk 2 kartu)
+- untuk XL FLEX limit pemakaian 2gb/hari + 60gb/bulan
+- untuk XL AKRAB limit 25gb/hari untuk sendiri kalo berdua yaa disedot berasama dua 25gb nya
 ## DOWNLOAD aplikasi Clash
 bisa download di <a href="https://play.google.com/store/apps/details?id=com.github.kr328.clash">playstore</a> atau <a href="https://github.com/Kr328/ClashForAndroid/releases">disini</a>
 sesuaikan dengan chipset hp kalian atau bisa pilih yang premium universal release
@@ -28,6 +19,9 @@ install dan buka aplikasinya
 - auto update isi 1080
 - untuk name isi terserah kalian
 - save dan tinggal pencet start
+- terus buka bagian menu proxy pencet logo petir kalo keluar angkanya berarti konek
+- jangan lupa donasi kalo konek
+- donasi bisa via gopay atau shoppee pay ke nomor 082239563924
 
 
 dah gitu aja, kalo gak paham atau mau request config lanjut ke <a href="https://wa.me/6285654602469">Whatsapp</a>
