@@ -176,8 +176,6 @@ rule-providers:
     
 rules:
 - RULE-SET,rule_reject,REJECT
-- RULE-SET,Facebook,PROXY
-- RULE-SET,Instagram,PROXY
 - RULE-SET,TikTok,KAMBING 🐐
 - RULE-SET,Whatsapp,DIRECT
 - MATCH,PROXY
