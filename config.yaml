@@ -130,17 +130,19 @@ proxies:
   - {name: DOMBA 🐑, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: cd51e480-ffe1-11ec-b73a-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
   - {name: KAMBING 🐐, server: idtj-tifa.bonds.id, port: 443, udp: true, type: trojan, password: dffa8080-ffe1-11ec-9b38-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
   - {name: SAPI 🐄, server: trojan3.udpgw.com, port: 443, udp: true, type: trojan, password: f0e6e700-ffe1-11ec-b51e-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
+  - {name: 2gb/hari, server: zendesk1.grabtaxi.com, port: 443, type: trojan, password: 2f4a5970-ffe6-11ec-829f-1239d0255272, skip-cert-verify: true, sni: sgovh-trojan.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: sgovh-trojan.bonds.id}}, udp: true}
 
 proxy-groups:
   - name: PROXY
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
+    type: select 
+    url: 'http://hi.bonds.id/ping'
     interval: 300
     proxies:
       - UNTA 🐫
       - SAPI 🐄
       - DOMBA 🐑
       - KAMBING 🐐
+      - 2gb/hari
       
 rule-providers:
   rule_reject:
