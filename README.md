@@ -18,7 +18,8 @@ install dan buka aplikasinya
 - kemudian tempel di kolom url
 - auto update isi 1080
 - untuk name isi terserah kalian
-- save dan tinggal pencet start
+- save dengan menekan ikon dipojok kanan atas
+- setelah profil tersimpan, kembali ke halaman utama dan langsung tinggal pencet start 
 - terus buka bagian menu proxy pencet logo petir kalo keluar angkanya berarti konek
 - jangan lupa donasi kalo konek awokawok😂
 - donasi bisa via gopay atau shoppee pay ke nomor 082239563924
