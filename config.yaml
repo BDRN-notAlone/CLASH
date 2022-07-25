@@ -126,10 +126,10 @@ dns:
     - +.media.dssott.com
 
 proxies:
-  - {name: UNTA 🐫, server: sgovh-trojan.bonds.id, port: 443, udp: true, type: trojan, password: c13db7a0-ffe1-11ec-a7cd-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
-  - {name: DOMBA 🐑, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: cd51e480-ffe1-11ec-b73a-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
-  - {name: KAMBING 🐐, server: idtj-tifa.bonds.id, port: 443, udp: true, type: trojan, password: dffa8080-ffe1-11ec-9b38-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
-  - {name: SAPI 🐄, server: trojan3.udpgw.com, port: 443, udp: true, type: trojan, password: f0e6e700-ffe1-11ec-b51e-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
+  - {name: UNTA 🐫, server: sgovh-trojan.bonds.id, port: 443, udp: true, type: trojan, password: c13db7a0-ffe1-11ec-a7cd-1239d0255272, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, skip-cert-verify: true}
+  - {name: DOMBA 🐑, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: cd51e480-ffe1-11ec-b73a-1239d0255272, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, skip-cert-verify: true}
+  - {name: KAMBING 🐐, server: idtj-tifa.bonds.id, port: 443, udp: true, type: trojan, password: dffa8080-ffe1-11ec-9b38-1239d0255272, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, skip-cert-verify: true}
+  - {name: SAPI 🐄, server: trojan3.udpgw.com, port: 443, udp: true, type: trojan, password: f0e6e700-ffe1-11ec-b51e-1239d0255272, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, skip-cert-verify: true}
   - {name: 2gb/hari, server: zendesk1.grabtaxi.com, port: 443, type: trojan, password: 2f4a5970-ffe6-11ec-829f-1239d0255272, skip-cert-verify: true, sni: sgovh-trojan.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: sgovh-trojan.bonds.id}}, udp: true}
 
 proxy-groups:
