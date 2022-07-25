@@ -126,7 +126,10 @@ dns:
     - +.media.dssott.com
 
 proxies:
-  -proxies:
+  - {name: SG HE-1, server: zendesk1.grabtaxi.com, port: 443, type: trojan, password: 963d5710-0c0f-11ed-bf15-1239d0255272, skip-cert-verify: true, sni: sg1-trojan.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: sg1-trojan.bonds.id}}, udp: true}
+  - {name: SG OVH, server: zendesk1.grabtaxi.com, port: 443, type: trojan, password: 73993940-0c0f-11ed-899e-1239d0255272, skip-cert-verify: true, sni: sgovh-trojan.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: sgovh-trojan.bonds.id}}, udp: true}
+  - {name: ID BIZNET BANTEN, server: zendesk1.grabtaxi.com, port: 443, type: trojan, password: b313e810-0c0f-11ed-892c-1239d0255272, skip-cert-verify: true, sni: id5-trojan.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: id5-trojan.bonds.id}}, udp: true}
+  - {name: ID NETARA TIFA, server: zendesk1.grabtaxi.com, port: 443, type: trojan, password: d6346a00-0c0f-11ed-9dac-1239d0255272, skip-cert-verify: true, sni: idtj-tifa.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: idtj-tifa.bonds.id}}, udp: true}
   - {name: SG Trojan OVH, server: sgovh-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 28ab2d10-0c0c-11ed-bd63-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
   - {name: SG-HE 1 Trojan VPN, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 390acb90-0c0c-11ed-af52-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
   - {name: ID-Biznet Banten Trojan, server: id5-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 4974f450-0c0c-11ed-a19f-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
@@ -134,6 +137,18 @@ proxies:
 
 proxy-groups:
   - name: PROXY
+    type: select
+    proxies:
+      - AKRAB
+      - FLEX
+  - name: FLEX
+    type: select
+    proxies:
+      - SG OVH
+      - SG HE-1
+      - ID BIZNET BANTEN
+      - ID NETARA TIFA
+  - name: AKRAB
     type: select
     proxies:
       - SG Trojan OVH
