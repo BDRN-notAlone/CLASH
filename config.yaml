@@ -126,23 +126,20 @@ dns:
     - +.media.dssott.com
 
 proxies:
-  - {name: UNTA 🐫, server: sgovh-trojan.bonds.id, port: 443, udp: true, type: trojan, password: c13db7a0-ffe1-11ec-a7cd-1239d0255272, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, skip-cert-verify: true}
-  - {name: DOMBA 🐑, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: cd51e480-ffe1-11ec-b73a-1239d0255272, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, skip-cert-verify: true}
-  - {name: KAMBING 🐐, server: idtj-tifa.bonds.id, port: 443, udp: true, type: trojan, password: dffa8080-ffe1-11ec-9b38-1239d0255272, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, skip-cert-verify: true}
-  - {name: SAPI 🐄, server: trojan3.udpgw.com, port: 443, udp: true, type: trojan, password: f0e6e700-ffe1-11ec-b51e-1239d0255272, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, skip-cert-verify: true}
-  - {name: 2gb/hari, server: zendesk1.grabtaxi.com, port: 443, type: trojan, password: 2f4a5970-ffe6-11ec-829f-1239d0255272, skip-cert-verify: true, sni: sgovh-trojan.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: sgovh-trojan.bonds.id}}, udp: true}
+  -proxies:
+  - {name: SG Trojan OVH, server: sgovh-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 28ab2d10-0c0c-11ed-bd63-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
+  - {name: SG-HE 1 Trojan VPN, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 390acb90-0c0c-11ed-af52-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
+  - {name: ID-Biznet Banten Trojan, server: id5-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 4974f450-0c0c-11ed-a19f-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
+  - {name: ID Netara Tifa Trojan, server: idtj-tifa.bonds.id, port: 443, udp: true, type: trojan, password: cd85a940-0c0c-11ed-96a2-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
 
 proxy-groups:
   - name: PROXY
-    type: select 
-    url: 'http://hi.bonds.id/ping'
-    interval: 300
+    type: select
     proxies:
-      - UNTA 🐫
-      - SAPI 🐄
-      - DOMBA 🐑
-      - KAMBING 🐐
-      - 2gb/hari
+      - SG Trojan OVH
+      - SG-HE 1 Trojan VPN
+      - ID-Biznet Banten Trojan
+      - ID Netara Tifa Trojan
       
 rule-providers:
   rule_reject:
@@ -150,18 +147,6 @@ rule-providers:
     behavior: domain
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
     path: "./provider/rule_reject.yaml"
-    interval: 86400
-  Facebook:
-    type: file
-    behavior: classical
-    path: "./provider/Facebook.yaml"
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Facebook/Facebook.yaml
-    interval: 86400
-  Instagram:
-    type: file
-    behavior: classical
-    path: "./provider/Instagram.yaml"
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Instagram/Instagram.yaml
     interval: 86400
   TikTok:
     type: file
@@ -177,9 +162,6 @@ rule-providers:
     interval: 86400
     
 rules:
-- RULE-SET,Instagram,REJECT
-- RULE-SET,Facebook,REJECT
-- RULE-SET,rule_reject,REJECT
-- RULE-SET,TikTok,REJECT
+- RULE-SET,TikTok,ID-Biznet Banten Trojan
 - RULE-SET,Whatsapp,DIRECT
 - MATCH,PROXY
