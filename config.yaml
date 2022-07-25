@@ -162,6 +162,7 @@ rule-providers:
     interval: 86400
     
 rules:
+- RULE-SET,rule_reject,REJECT
 - RULE-SET,TikTok,ID-Biznet Banten Trojan
 - RULE-SET,Whatsapp,DIRECT
 - MATCH,PROXY
