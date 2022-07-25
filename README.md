@@ -1,10 +1,10 @@
 ## Tutorial &amp; Config Clash for Android
-khusus untuk XL yang ada unli WhatsApp nya
+khusus untuk XL Paket Flex dan paket Akrab
 
 ## Cara dapat paket XL unli WhatsApp 
 - XL FLEX bisa beli di konter atau via jasa tembak atau beli di saya juga bisa awokawok
 - XL AKRAB bisa beli di Myxl (satu paket bisa untuk 2 kartu)
-- untuk XL FLEX limit pemakaian 60gb/bulan + 2gb/hari
+- untuk XL FLEX limit pemakaian 2gb/hari + kuota WhatsApp LINE 60gb/perbulan
 - untuk XL AKRAB limit 25gb/hari untuk sendiri kalo berdua yaa disedot berasama dua 25gb nya
 ## DOWNLOAD aplikasi Clash
 bisa download di <a href="https://play.google.com/store/apps/details?id=com.github.kr328.clash">playstore</a> atau <a href="https://github.com/Kr328/ClashForAndroid/releases">disini</a>
