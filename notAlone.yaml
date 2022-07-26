@@ -75,27 +75,20 @@ hosts:
   'cacerts.digicert.com': 141.193.213.20
 tproxy-port: 9898
 proxies:
-  - {name: ID-IKD Trojan VPN, server: idtj-ikd.bonds.id, port: 443, udp: true, type: trojan, password: f97105a0-0570-11ed-a5ee-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
-  - {name: ID Netara Tifa Trojan, server: idtj-tifa.bonds.id, port: 443, udp: true, type: trojan, password: 07403880-0571-11ed-8fe8-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
-  - {name: ID-Uninet Trojan VPN, server: idtj-uninet.bonds.id, port: 443, udp: true, type: trojan, password: 17ee6b40-0571-11ed-b1fc-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
-  - {name: ID-Biznet Banten Trojan, server: id5-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 2b6aa3a0-0571-11ed-b98e-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
-  - {name: ID-Biznet Jakarta Trojan, server: id2-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 3dc40000-0571-11ed-bc80-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
-  - {name: SG Trojan OVH, server: sgovh-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 5a7b9b80-0571-11ed-86a9-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
-  - {name: SG-HE 1 Trojan VPN, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 6b90afe0-0571-11ed-b920-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
-  - {name: SG LINODE WEEKLY, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: 7a0e3ba0-0571-11ed-9db7-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
-
+  - {name: jupitervpn vmess id3, server: zendesk1.grabtaxi.com, port: 80, type: vmess, uuid: 6f67b516-1368-44a9-9ef8-1ff93efd5407, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: id3.jupitervpn.me, network: ws, ws-opts: {path: /vmess/, headers: {Host: id3.jupitervpn.me}}, udp: true}
+  - {name: jupitervpn vmess sg3, server: zendesk1.grabtaxi.com, port: 80, type: vmess, uuid: 09915a27-b871-4288-8b04-5847f4130738, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: sg3.jupitervpn.me, network: ws, ws-opts: {path: /vmess/, headers: {Host: sg3.jupitervpn.me}}, udp: true}
+  - {name: jupitervpn vless id2, server: zendesk1.grabtaxi.com, port: 443, type: vless, uuid: 749d7e33-6f15-48ac-a375-1e70c1b67a67, cipher: auto, tls: true, skip-cert-verify: true, servername: id2.jupitervpn.me, network: ws, ws-opts: {path: /vless/, headers: {Host: id2.jupitervpn.me}}, udp: true}
+  - {name: jupitervpn xvless id2, server: zendesk1.grabtaxi.com, port: 443, type: vless, uuid: 5dd63f66-2a90-456e-9805-e0cd6106788f, cipher: auto, tls: true, skip-cert-verify: true, servername: id2.jupitervpn.me, network: ws, ws-opts: {path: /xvless/, headers: {Host: id2.jupitervpn.me}}, udp: true}
+  - {name: jupitervn xvless sg1, server: zendesk1.grabtaxi.com, port: 443, type: vless, uuid: 20764a76-3cb7-4808-8b97-214e5dc9bb88, cipher: auto, tls: true, skip-cert-verify: true, servername: sg1.jupitervpn.me, network: ws, ws-opts: {path: /xvless/, headers: {Host: sg1.jupitervpn.me}}, udp: true}
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
-      - ID-IKD Trojan VPN
-      - ID Netara Tifa Trojan
-      - ID-Uninet Trojan VPN
-      - ID-Biznet Banten Trojan
-      - ID-Biznet Jakarta Trojan
-      - SG Trojan OVH
-      - SG-HE 1 Trojan VPN
-      - SG LINODE WEEKLY
+      - jupitervpn vmess id3
+      - jupitervpn vmess sg3
+      - jupitervpn vless id2
+      - jupitervpn xvless id2
+      - jupitervn xvless sg1
 
 
 rule-providers:
