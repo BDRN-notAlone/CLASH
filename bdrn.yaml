@@ -1,79 +1,9 @@
-port: 7890
-socks-port: 7891
-redir-port: 7892
-mixed-port: 7893
-tproxy-port: 7895
-ipv6: false
-mode: rule
-log-level: silent
-allow-lan: true
-external-controller: 0.0.0.0:9090
-secret: ""
-bind-address: "*"
-unified-delay: true
-profile:
-  store-selected: true
-dns:
-  enable: true
-  ipv6: false
-  enhanced-mode: redir-host
-  listen: 0.0.0.0:7874
-  nameserver:
-    - 1.1.1.1
-    - 8.8.8.8
-  fallback:
-    - 1.0.0.1
-    - https://dns.cloudflare.com/dns-query
-    - https://dns.google/dns-query
-    - 112.215.203.254
-  default-nameserver:
-    - 1.1.1.1
-    - 8.8.8.8
-    - 112.215.203.254
-
-proxies:
-  - {name: ID-BIZNET V2RAY, server: zendesk1.grabtaxi.com, port: 80, type: vmess, uuid: 9202b80a-0355-447e-bbfe-27d5d92f9d20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: id3.v2-ray.com, network: ws, ws-opts: {path: /fastssh/notalone2/62bebc5407c98/, headers: {Host: id3.v2-ray.com}}, udp: true}
-  - {name: SG-HE 1 V2RAY, server: zendesk1.grabtaxi.com, port: 80, type: vmess, uuid: a0cbf383-de04-469b-8e0f-df7b0306d825, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: sg1.v2-ray.com, network: ws, ws-opts: {path: /fastssh/notalone2/62bebcbb6335a/, headers: {Host: sg1.v2-ray.com}}, udp: true}
-  - {name: trojan2.udpgw.com, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: 973ef350-f6a5-11ec-9274-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
-  - {name: SG-HE 1 Trojan VPN, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: e8697230-f6a5-11ec-b38d-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
-  - {name: ID-Biznet Banten Trojan, server: id5-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 5ed77350-f8d5-11ec-a990-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
-  - {name: ID-IKD Trojan VPN, server: idtj-ikd.bonds.id, port: 443, udp: true, type: trojan, password: 6e3b8960-f8d5-11ec-9388-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
-  - {name: ID-Biznet Jakarta Trojan, server: id2-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 800b1ec0-f8d5-11ec-ab6a-1239d0255272, sni: web.web.whatsapp.com, skip-cert-verify: true}
-
-proxy-groups:
-  - name: PROXY
-    type: select
-    proxies:
-      - V2RAY 3GB/hari
-      - TROJAN 60GB/bulan
-  - name: TROJAN 60GB/bulan
-    type: select
-    proxies:
-      - trojan2.udpgw.com
-      - SG-HE 1 Trojan VPN
-      - ID-Biznet Banten Trojan
-      - ID-IKD Trojan VPN
-      - ID-Biznet Jakarta Trojan
-  - name: V2RAY 3GB/hari
-    type: select
-    proxies:
-      - ID-BIZNET V2RAY
-      - SG-HE 1 V2RAY
-
-  - name: ADS
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-      - PROXY
-rule-providers:
-  reject:
-    type: file
-    behavior: domain
-    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
-    path: "./provider/reject.yaml"
-    interval: 86400
-    
-rules:
-- RULE-SET,reject,ADS
-- MATCH,PROXY
+trojan://963d5710-0c0f-11ed-bf15-1239d0255272@zendesk1.grabtaxi.com:443?path=%2Fhowdy&security=tls&host=sg1-trojan.bonds.id&type=ws&sni=sg1-trojan.bonds.id#SG+HE-1
+trojan://73993940-0c0f-11ed-899e-1239d0255272@162.159.138.6:443?path=%2Fhowdy&security=tls&host=sgovh-trojan.bonds.id&type=ws&sni=sgovh-trojan.bonds.id#SG+OVH
+trojan://d6346a00-0c0f-11ed-9dac-1239d0255272@zendesk1.grabtaxi.com:443?path=%2Fhowdy&security=tls&host=idtj-tifa.bonds.id&type=ws&sni=idtj-tifa.bonds.id#ID+NETARA+TIFA
+vless://20764a76-3cb7-4808-8b97-214e5dc9bb88@zendesk1.grabtaxi.com:443?path=%2Fxvless%2F&security=tls&encryption=none&host=sg1.jupitervpn.me&type=ws&sni=sg1.jupitervpn.me#jupitervn+xvless+sg1
+vless://5dd63f66-2a90-456e-9805-e0cd6106788f@zendesk1.grabtaxi.com:443?path=%2Fxvless%2F&security=tls&encryption=none&host=id2.jupitervpn.me&type=ws&sni=id2.jupitervpn.me#jupitervpn+xvless+id2
+vless://749d7e33-6f15-48ac-a375-1e70c1b67a67@zendesk1.grabtaxi.com:443?path=%2Fvless%2F&security=tls&encryption=none&host=id2.jupitervpn.me&type=ws&sni=id2.jupitervpn.me#jupitervpn+vless+id2
+vmess://eyJhZGQiOiJ6ZW5kZXNrMS5ncmFidGF4aS5jb20iLCJhaWQiOiIwIiwiaG9zdCI6InNnMy5qdXBpdGVydnBuLm1lIiwiaWQiOiIwOTkxNWEyNy1iODcxLTQyODgtOGIwNC01ODQ3ZjQxMzA3MzgiLCJuZXQiOiJ3cyIsInBhdGgiOiIvdm1lc3MvIiwicG9ydCI6IjgwIiwicHMiOiJqdXBpdGVydnBuIHZtZXNzIHNnMyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ==
+vmess://eyJhZGQiOiJ6ZW5kZXNrMS5ncmFidGF4aS5jb20iLCJhaWQiOiIwIiwiaG9zdCI6ImlkMy5qdXBpdGVydnBuLm1lIiwiaWQiOiI2ZjY3YjUxNi0xMzY4LTQ0YTktOWVmOC0xZmY5M2VmZDU0MDciLCJuZXQiOiJ3cyIsInBhdGgiOiIvdm1lc3MvIiwicG9ydCI6IjgwIiwicHMiOiJqdXBpdGVydnBuIHZtZXNzIGlkMyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ==
+vless://35d9112c-d699-4480-aa0b-bae693beaf19@zendesk1.grabtaxi.com:443?path=%2Fxvless%2F&security=tls&encryption=none&host=sg1.jupitervpn.me&type=ws&sni=sg1.jupitervpn.me#Xray+vless+5+hari+grab
