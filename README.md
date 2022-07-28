@@ -1,7 +1,7 @@
 ## Tutorial &amp; Config Clash for Android
 khusus untuk XL Paket Flex dan paket Akrab
 
-## Cara dapat paket XL unli WhatsApp 
+## Cara daftar paket
 - XL FLEX bisa beli di konter atau via jasa tembak atau beli di saya juga bisa awokawok
 - XL AKRAB bisa beli di Myxl (satu paket bisa untuk 2 kartu)
 - untuk XL FLEX limit pemakaian 2gb/hari + kuota WhatsApp LINE 60gb/perbulan
