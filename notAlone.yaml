@@ -2,94 +2,44 @@ port: 7890
 socks-port: 7891
 redir-port: 7892
 mixed-port: 7893
+tproxy-port: 7895
+ipv6: false
 mode: rule
-allow-lan: true
-unified-delay: true
-bind-address: '*'
 log-level: silent
-ipv6: true
-geodata-mode: true
+allow-lan: true
 external-controller: 0.0.0.0:9090
-external-ui: dashboard/dist
-tcp-concurrent: false
-interface-name: ""
-enable-process: false
-geodata-loader: memconservative
 secret: ""
+bind-address: "*"
+unified-delay: true
 profile:
   store-selected: true
-  store-fake-ip: false
-geox-url: {mmdb: "https://cdn.jsdelivr.net/gh/Dreamacro/maxmind-geoip@release/Country.mmdb", geoip: "https://github.com/v2fly/geoip/raw/release/geoip-only-cn-private.dat", geosite: "https://github.com/taamarin/GeoSite.dat/raw/release/dlc.dat"}
 dns:
   enable: true
-  device: Meta
-  ipv6: true
-  default-nameserver:
-    - 1.1.1.1
-    - 9.9.9.9
-  listen: 0.0.0.0:1053
-  use-hosts: true
-  enhanced-mode: fake-ip
-  fake-ip-filter: ['networktest.twilio.com', '+.twilio.com']
+  ipv6: false
+  enhanced-mode: redir-host
+  listen: 0.0.0.0:7874
   nameserver:
-    - https://149.112.112.112/dns-query
-    - quic://dns.adguard.com
-    - tls://dns.adguard.com
-  proxy-server-nameserver:
-    - 104.18.38.174
+    - 8.8.8.8
+    - 1.0.0.1
+    - https://dns.google/dns-query
   fallback:
     - 1.1.1.1
+    - 8.8.4.4
+    - https://cloudflare-dns.com/dns-query
+    - 112.215.203.254
+  default-nameserver:
     - 8.8.8.8
-  fallback-filter:
-    geoip: false
-    geoip-code: ID
-    geosite: []
-    domain:
-      - '+.google.com'
-    ipcidr: []
-auto-redir:
-  enable: false
-  auto-route: false
-tun:
-  enable: false
-  stack: system
-  dns-hijack:
-    - any:53
-  auto-route: true
-  auto-detect-interface: true
-sniffer:
-  enable: false
-  sniffing:
-    - tls
-    - http
-  force-domain:
-    - '+'
-  skip-domain:
-    - '+.google.com'
-  port-whitelist:
-    - 443
-    - 80
-iptables: {enable: false, inbound-interface: "", bypass: []}
-hosts:
-  '+.clash.meta': 127.0.0.1
-  'cacerts.digicert.com': 141.193.213.20
-tproxy-port: 9898
+    - 1.1.1.1
+    - 112.215.203.254
 proxies:
-  - {name: jupitervpn vmess id3, server: zendesk1.grabtaxi.com, port: 80, type: vmess, uuid: 6f67b516-1368-44a9-9ef8-1ff93efd5407, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: id3.jupitervpn.me, network: ws, ws-opts: {path: /vmess/, headers: {Host: id3.jupitervpn.me}}, udp: true}
-  - {name: jupitervpn vmess sg3, server: zendesk1.grabtaxi.com, port: 80, type: vmess, uuid: 09915a27-b871-4288-8b04-5847f4130738, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: sg3.jupitervpn.me, network: ws, ws-opts: {path: /vmess/, headers: {Host: sg3.jupitervpn.me}}, udp: true}
-  - {name: jupitervpn vless id2, server: zendesk1.grabtaxi.com, port: 443, type: vless, uuid: 749d7e33-6f15-48ac-a375-1e70c1b67a67, cipher: auto, tls: true, skip-cert-verify: true, servername: id2.jupitervpn.me, network: ws, ws-opts: {path: /vless/, headers: {Host: id2.jupitervpn.me}}, udp: true}
-  - {name: jupitervpn xvless id2, server: zendesk1.grabtaxi.com, port: 443, type: vless, uuid: 5dd63f66-2a90-456e-9805-e0cd6106788f, cipher: auto, tls: true, skip-cert-verify: true, servername: id2.jupitervpn.me, network: ws, ws-opts: {path: /xvless/, headers: {Host: id2.jupitervpn.me}}, udp: true}
-  - {name: jupitervn xvless sg1, server: zendesk1.grabtaxi.com, port: 443, type: vless, uuid: 20764a76-3cb7-4808-8b97-214e5dc9bb88, cipher: auto, tls: true, skip-cert-verify: true, servername: sg1.jupitervpn.me, network: ws, ws-opts: {path: /xvless/, headers: {Host: sg1.jupitervpn.me}}, udp: true}
+  - {name: jupitervpn-grdgf, server: 104.26.4.10, port: 443, type: vmess, uuid: 1558d6e0-03ee-4ae4-b30a-60c19bd0c58b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: "", network: grpc, grpc-opts: {grpc-service-name: v2ray-vmess-grpc}, udp: true}
+  - {name: jupitervpn-vahag, server: sg2.jupitervpn.me, port: 443, type: vmess, uuid: 9fdc5e1a-cc9b-4438-9807-43788b71abe4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: "", network: grpc, grpc-opts: {grpc-service-name: v2ray-vmess-grpc}, udp: true}
 proxy-groups:
-  - name: PROXY
+  - name: FASTSSH-SSHKIT-HOWDY
     type: select
     proxies:
-      - jupitervpn vmess id3
-      - jupitervpn vmess sg3
-      - jupitervpn vless id2
-      - jupitervpn xvless id2
-      - jupitervn xvless sg1
-
+      - jupitervpn-grdgf
+      - jupitervpn-vahag
 
 rule-providers:
   reject:
