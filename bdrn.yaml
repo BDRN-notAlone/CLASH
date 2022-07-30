@@ -1,9 +1,0 @@
-trojan://963d5710-0c0f-11ed-bf15-1239d0255272@zendesk1.grabtaxi.com:443?path=%2Fhowdy&security=tls&host=sg1-trojan.bonds.id&type=ws&sni=sg1-trojan.bonds.id#SG+HE-1
-trojan://73993940-0c0f-11ed-899e-1239d0255272@162.159.138.6:443?path=%2Fhowdy&security=tls&host=sgovh-trojan.bonds.id&type=ws&sni=sgovh-trojan.bonds.id#SG+OVH
-trojan://d6346a00-0c0f-11ed-9dac-1239d0255272@zendesk1.grabtaxi.com:443?path=%2Fhowdy&security=tls&host=idtj-tifa.bonds.id&type=ws&sni=idtj-tifa.bonds.id#ID+NETARA+TIFA
-vless://20764a76-3cb7-4808-8b97-214e5dc9bb88@zendesk1.grabtaxi.com:443?path=%2Fxvless%2F&security=tls&encryption=none&host=sg1.jupitervpn.me&type=ws&sni=sg1.jupitervpn.me#jupitervn+xvless+sg1
-vless://5dd63f66-2a90-456e-9805-e0cd6106788f@zendesk1.grabtaxi.com:443?path=%2Fxvless%2F&security=tls&encryption=none&host=id2.jupitervpn.me&type=ws&sni=id2.jupitervpn.me#jupitervpn+xvless+id2
-vless://749d7e33-6f15-48ac-a375-1e70c1b67a67@zendesk1.grabtaxi.com:443?path=%2Fvless%2F&security=tls&encryption=none&host=id2.jupitervpn.me&type=ws&sni=id2.jupitervpn.me#jupitervpn+vless+id2
-vmess://eyJhZGQiOiJ6ZW5kZXNrMS5ncmFidGF4aS5jb20iLCJhaWQiOiIwIiwiaG9zdCI6InNnMy5qdXBpdGVydnBuLm1lIiwiaWQiOiIwOTkxNWEyNy1iODcxLTQyODgtOGIwNC01ODQ3ZjQxMzA3MzgiLCJuZXQiOiJ3cyIsInBhdGgiOiIvdm1lc3MvIiwicG9ydCI6IjgwIiwicHMiOiJqdXBpdGVydnBuIHZtZXNzIHNnMyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ==
-vmess://eyJhZGQiOiJ6ZW5kZXNrMS5ncmFidGF4aS5jb20iLCJhaWQiOiIwIiwiaG9zdCI6ImlkMy5qdXBpdGVydnBuLm1lIiwiaWQiOiI2ZjY3YjUxNi0xMzY4LTQ0YTktOWVmOC0xZmY5M2VmZDU0MDciLCJuZXQiOiJ3cyIsInBhdGgiOiIvdm1lc3MvIiwicG9ydCI6IjgwIiwicHMiOiJqdXBpdGVydnBuIHZtZXNzIGlkMyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ==
-vless://35d9112c-d699-4480-aa0b-bae693beaf19@zendesk1.grabtaxi.com:443?path=%2Fxvless%2F&security=tls&encryption=none&host=sg1.jupitervpn.me&type=ws&sni=sg1.jupitervpn.me#Xray+vless+5+hari+grab
