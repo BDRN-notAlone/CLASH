@@ -155,6 +155,16 @@ proxy-groups:
       - SG-HE 1 Trojan VPN
       - ID-Biznet Banten Trojan
       - ID Netara Tifa Trojan
+  - name: SOSMED
+    type: url-test
+    url: http://hi.bonds.id/ping
+    interval: 300
+    tolerance: 50
+    proxies:
+      - ID BIZNET BANTEN
+      - ID NETARA TIFA
+      - ID-Biznet Banten Trojan
+      - ID Netara Tifa Trojan
       
 rule-providers:
   rule_reject:
@@ -163,21 +173,21 @@ rule-providers:
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
     path: "./provider/rule_reject.yaml"
     interval: 86400
-  TikTok:
+  rule_porn:
     type: file
     behavior: classical
-    path: "./provider/TikTok.yaml"
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml
+    path: "./provider/rule_porn.yaml"
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_porn.yaml
     interval: 86400
-  Whatsapp:
+  rule_sosmed:
     type: file
     behavior: classical
-    path: "./provider/Whatsapp.yaml"
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Whatsapp/Whatsapp.yaml
+    path: "./provider/rule_sosmed.yaml"
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_sosmed.yaml
     interval: 86400
     
 rules:
 - RULE-SET,rule_reject,REJECT
-- RULE-SET,TikTok,ID-Biznet Banten Trojan
-- RULE-SET,Whatsapp,DIRECT
+- RULE-SET,rule_sosmed,SOSMED
+- RULE-SET,rule_porn,DIRECT
 - MATCH,PROXY
