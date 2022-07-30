@@ -173,12 +173,6 @@ rule-providers:
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
     path: "./provider/rule_reject.yaml"
     interval: 86400
-  rule_porn:
-    type: file
-    behavior: classical
-    path: "./provider/Porn.yaml"
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/masterE:\Projects\RuleGenerator\temp\Github\rule\Clash\Porn/Porn.yaml
-    interval: 86400
   rule_sosmed:
     type: file
     behavior: classical
@@ -189,5 +183,4 @@ rule-providers:
 rules:
 - RULE-SET,rule_reject,REJECT
 - RULE-SET,rule_sosmed,SOSMED
-- RULE-SET,rule_porn,DIRECT
 - MATCH,PROXY
