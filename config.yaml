@@ -179,8 +179,15 @@ rule-providers:
     path: "./provider/rule_sosmed.yaml"
     url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_sosmed.yaml
     interval: 86400
+  rule_porn:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_porn.yaml
+    path: "./rule_provider/rule_porn.yaml"
+    interval: 86400
     
 rules:
 - RULE-SET,rule_reject,REJECT
 - RULE-SET,rule_sosmed,SOSMED
+- RULE-SET,rule_porn,DIRECT
 - MATCH,PROXY
