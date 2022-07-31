@@ -174,8 +174,8 @@ rule-providers:
     path: "./provider/rule_reject.yaml"
     interval: 86400
   rule_sosmed:
-    type: file
-    behavior: classical
+    type: http
+    behavior: domain
     path: "./provider/rule_sosmed.yaml"
     url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_sosmed.yaml
     interval: 86400
@@ -183,7 +183,7 @@ rule-providers:
     type: http
     behavior: domain
     url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_porn.yaml
-    path: "./rule_provider/rule_porn.yaml"
+    path: "./provider/rule_porn.yaml"
     interval: 86400
     
 rules:
