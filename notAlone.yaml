@@ -33,8 +33,6 @@ dns:
     - 112.215.203.254
 
 proxies:
-  - {name: id ws, server: 104.26.4.10, port: 443, type: vmess, uuid: 1558d6e0-03ee-4ae4-b30a-60c19bd0c58b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: id2.jupitervpn.me, network: grpc, grpc-opts: {grpc-service-name: v2ray-vmess-grpc}, udp: true}
-  - {name: sg google, server: sg2.jupitervpn.me, port: 443, type: vmess, uuid: 9fdc5e1a-cc9b-4438-9807-43788b71abe4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: kh.google.com, network: grpc, grpc-opts: {grpc-service-name: v2ray-vmess-grpc}, udp: true}
   - {name: Linode Google, server: trojan3.udpgw.com, port: 443, type: trojan, password: e80991d0-0f86-11ed-8466-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
   - {name: Linode Microsoft, server: trojan3.udpgw.com, port: 443, type: trojan, password: e80991d0-0f86-11ed-8466-1239d0255272, skip-cert-verify: true, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, udp: true}
   - {name: Banten Google, server: id5-trojan.bonds.id, port: 443, type: trojan, password: 57cdd1c0-0f8a-11ed-bdc4-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
@@ -50,8 +48,6 @@ proxy-groups:
   - name: PROXY
     type: select
     proxies:
-      - sg google
-      - id ws
       - Linode Google
       - Linode Microsoft
       - Banten Google
