@@ -126,6 +126,7 @@ dns:
     - +.media.dssott.com
 
 proxies:
+  - {name: AKRAB ID HERZA, server: idtj-herza.bonds.id, port: 443, type: trojan, password: 14f58dd0-1c39-11ed-9b9e-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
   - {name: FLEX ID HERZA, server: zendesk1.grabtaxi.com, port: 443, type: trojan, password: 14f58dd0-1c39-11ed-9b9e-1239d0255272, skip-cert-verify: true, sni: idtj-herza.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: idtj-herza.bonds.id}}, udp: true}
   - {name: AKRAB SG HE, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: 42bccae0-1c39-11ed-ab16-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
   - {name: FLEX SG HE, server: zendesk1.grabtaxi.com, port: 443, type: trojan, password: 42bccae0-1c39-11ed-ab16-1239d0255272, skip-cert-verify: true, sni: sg1-trojan.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: sg1-trojan.bonds.id}}, udp: true}
