@@ -133,8 +133,9 @@ proxies:
   - {name: FLEX SG HE 2, server: zendesk1.grabtaxi.com, port: 443, type: trojan, password: 7813d740-1c39-11ed-b8cd-1239d0255272, skip-cert-verify: true, sni: sgovh-trojan.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: sgovh-trojan.bonds.id}}, udp: true}
   - {name: AKRAB ID BIZNET, server: id2-trojan.bonds.id, port: 443, type: trojan, password: a0bd0600-1c39-11ed-ba82-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
   - {name: FLEX ID BIZNET, server: zendesk1.grabtaxi.com, port: 443, type: trojan, password: a0bd0600-1c39-11ed-ba82-1239d0255272, skip-cert-verify: true, sni: id2-trojan.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: id2-trojan.bonds.id}}, udp: true}
+
 proxy-groups:
-  - name: FASTSSH-SSHKIT-HOWDY
+  - name: PROXY
     type: select
     proxies:
       - AKRAB ID HERZA
