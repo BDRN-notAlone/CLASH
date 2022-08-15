@@ -126,45 +126,25 @@ dns:
     - +.media.dssott.com
 
 proxies:
-  - {name: SG HE-1, server: zendesk1.grabtaxi.com, port: 443, type: trojan, password: 963d5710-0c0f-11ed-bf15-1239d0255272, skip-cert-verify: true, sni: sg1-trojan.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: sg1-trojan.bonds.id}}, udp: true}
-  - {name: SG OVH, server: zendesk1.grabtaxi.com, port: 443, type: trojan, password: 73993940-0c0f-11ed-899e-1239d0255272, skip-cert-verify: true, sni: sgovh-trojan.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: sgovh-trojan.bonds.id}}, udp: true}
-  - {name: ID BIZNET BANTEN, server: zendesk1.grabtaxi.com, port: 443, type: trojan, password: b313e810-0c0f-11ed-892c-1239d0255272, skip-cert-verify: true, sni: id5-trojan.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: id5-trojan.bonds.id}}, udp: true}
-  - {name: ID NETARA TIFA, server: zendesk1.grabtaxi.com, port: 443, type: trojan, password: d6346a00-0c0f-11ed-9dac-1239d0255272, skip-cert-verify: true, sni: idtj-tifa.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: idtj-tifa.bonds.id}}, udp: true}
-  - {name: SG Trojan OVH, server: sgovh-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 28ab2d10-0c0c-11ed-bd63-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
-  - {name: SG-HE 1 Trojan VPN, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 390acb90-0c0c-11ed-af52-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
-  - {name: ID-Biznet Banten Trojan, server: id5-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 4974f450-0c0c-11ed-a19f-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
-  - {name: ID Netara Tifa Trojan, server: idtj-tifa.bonds.id, port: 443, udp: true, type: trojan, password: cd85a940-0c0c-11ed-96a2-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
-
+  - {name: FLEX ID HERZA, server: zendesk1.grabtaxi.com, port: 443, type: trojan, password: 14f58dd0-1c39-11ed-9b9e-1239d0255272, skip-cert-verify: true, sni: idtj-herza.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: idtj-herza.bonds.id}}, udp: true}
+  - {name: AKRAB SG HE, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: 42bccae0-1c39-11ed-ab16-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: FLEX SG HE, server: zendesk1.grabtaxi.com, port: 443, type: trojan, password: 42bccae0-1c39-11ed-ab16-1239d0255272, skip-cert-verify: true, sni: sg1-trojan.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: sg1-trojan.bonds.id}}, udp: true}
+  - {name: AKRAB SG OVH, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: 7813d740-1c39-11ed-b8cd-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: FLEX SG HE 2, server: zendesk1.grabtaxi.com, port: 443, type: trojan, password: 7813d740-1c39-11ed-b8cd-1239d0255272, skip-cert-verify: true, sni: sgovh-trojan.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: sgovh-trojan.bonds.id}}, udp: true}
+  - {name: AKRAB ID BIZNET, server: id2-trojan.bonds.id, port: 443, type: trojan, password: a0bd0600-1c39-11ed-ba82-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: FLEX ID BIZNET, server: zendesk1.grabtaxi.com, port: 443, type: trojan, password: a0bd0600-1c39-11ed-ba82-1239d0255272, skip-cert-verify: true, sni: id2-trojan.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: id2-trojan.bonds.id}}, udp: true}
 proxy-groups:
-  - name: PROXY
+  - name: FASTSSH-SSHKIT-HOWDY
     type: select
     proxies:
-      - AKRAB
-      - FLEX
-  - name: FLEX
-    type: select
-    proxies:
-      - SG OVH
-      - SG HE-1
-      - ID BIZNET BANTEN
-      - ID NETARA TIFA
-  - name: AKRAB
-    type: select
-    proxies:
-      - SG Trojan OVH
-      - SG-HE 1 Trojan VPN
-      - ID-Biznet Banten Trojan
-      - ID Netara Tifa Trojan
-  - name: SOSMED
-    type: url-test
-    url: http://hi.bonds.id/ping
-    interval: 300
-    tolerance: 50
-    proxies:
-      - ID BIZNET BANTEN
-      - ID NETARA TIFA
-      - ID-Biznet Banten Trojan
-      - ID Netara Tifa Trojan
+      - AKRAB ID HERZA
+      - FLEX ID HERZA
+      - AKRAB SG HE
+      - FLEX SG HE
+      - AKRAB SG OVH
+      - FLEX SG HE 2
+      - AKRAB ID BIZNET
+      - FLEX ID BIZNET
       
 rule-providers:
   rule_reject:
@@ -173,21 +153,7 @@ rule-providers:
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
     path: "./provider/rule_reject.yaml"
     interval: 86400
-  rule_sosmed:
-    type: http
-    behavior: domain
-    path: "./provider/rule_sosmed.yaml"
-    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_sosmed.yaml
-    interval: 86400
-  rule_porn:
-    type: http
-    behavior: domain
-    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_porn.yaml
-    path: "./provider/rule_porn.yaml"
-    interval: 86400
     
 rules:
 - RULE-SET,rule_reject,REJECT
-- RULE-SET,rule_sosmed,SOSMED
-- RULE-SET,rule_porn,DIRECT
 - MATCH,PROXY
