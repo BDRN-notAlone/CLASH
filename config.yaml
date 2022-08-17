@@ -126,6 +126,7 @@ dns:
     - +.media.dssott.com
 
 proxies:
+  - {name: by.u popok, server: 162.159.138.78, port: 443, type: trojan, password: 22fe75e0-169f-11ed-96e3-1239d0255272, skip-cert-verify: true, sni: space.byu.id, network: ws, ws-opts: {path: wss://space.byu.id/howdy, headers: {Host: sg1-trojan.bonds.id}}, udp: true}
   - {name: AKRAB ID HERZA, server: idtj-herza.bonds.id, port: 443, type: trojan, password: 14f58dd0-1c39-11ed-9b9e-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
   - {name: FLEX ID HERZA, server: zendesk1.grabtaxi.com, port: 443, type: trojan, password: 14f58dd0-1c39-11ed-9b9e-1239d0255272, skip-cert-verify: true, sni: idtj-herza.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: idtj-herza.bonds.id}}, udp: true}
   - {name: AKRAB SG HE, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: 42bccae0-1c39-11ed-ab16-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
@@ -147,6 +148,7 @@ proxy-groups:
       - FLEX SG OVH
       - AKRAB ID BIZNET
       - FLEX ID BIZNET
+      - by.u popok
       
 rule-providers:
   rule_reject:
