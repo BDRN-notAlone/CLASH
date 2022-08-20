@@ -33,31 +33,31 @@ dns:
     - 112.215.203.254
 
 proxies:
-  - {name: Linode Google, server: trojan3.udpgw.com, port: 443, type: trojan, password: e80991d0-0f86-11ed-8466-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: Linode Microsoft, server: trojan3.udpgw.com, port: 443, type: trojan, password: e80991d0-0f86-11ed-8466-1239d0255272, skip-cert-verify: true, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, udp: true}
-  - {name: Banten Google, server: id5-trojan.bonds.id, port: 443, type: trojan, password: 57cdd1c0-0f8a-11ed-bdc4-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: Banten Microsoft, server: id5-trojan.bonds.id, port: 443, type: trojan, password: 57cdd1c0-0f8a-11ed-bdc4-1239d0255272, skip-cert-verify: true, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, udp: true}
-  - {name: He Google, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: 7cb731a0-0f8a-11ed-830f-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: He Microsoft, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: 7cb731a0-0f8a-11ed-830f-1239d0255272, skip-cert-verify: true, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, udp: true}
-  - {name: Biznet Google, server: id2-trojan.bonds.id, port: 443, type: trojan, password: 8af7bb80-0f8a-11ed-baa1-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: Biznet Microsoft, server: id2-trojan.bonds.id, port: 443, type: trojan, password: 8af7bb80-0f8a-11ed-baa1-1239d0255272, skip-cert-verify: true, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, udp: true}
-  - {name: OVH Google, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: a23e1050-0f8a-11ed-9027-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: OVH Microsoft, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: a23e1050-0f8a-11ed-9027-1239d0255272, skip-cert-verify: true, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, udp: true}
+  - {name: LINODE GOOGLE, server: trojan1.udpgw.com, port: 443, udp: true, type: trojan, password: 243f6780-2084-11ed-8d50-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
+  - {name: HERZA GOOGLE, server: idtj-herza.bonds.id, port: 443, udp: true, type: trojan, password: 72d72f00-2084-11ed-be15-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
+  - {name: BIZNET GOOGLE, server: id2-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 9aa5ab20-2084-11ed-992a-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
+  - {name: OVH GOOGLE, server: sgovh-trojan.bonds.id, port: 443, udp: true, type: trojan, password: adfc8090-2084-11ed-a545-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
+  - {name: HE GOOGLE, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: c39c7700-2084-11ed-b924-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
+  - {name: LINODE MICROSOFT, server: trojan1.udpgw.com, port: 443, udp: true, type: trojan, password: 243f6780-2084-11ed-8d50-1239d0255272, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, skip-cert-verify: true}
+  - {name: HERZA MICROSOFT, server: idtj-herza.bonds.id, port: 443, udp: true, type: trojan, password: 72d72f00-2084-11ed-be15-1239d0255272, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, skip-cert-verify: true}
+  - {name: BIZNET MICROSOFT, server: id2-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 9aa5ab20-2084-11ed-992a-1239d0255272, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, skip-cert-verify: true}
+  - {name: OVH MICROSOFT, server: sgovh-trojan.bonds.id, port: 443, udp: true, type: trojan, password: adfc8090-2084-11ed-a545-1239d0255272, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, skip-cert-verify: true}
+  - {name: HE MICROSOFT, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: c39c7700-2084-11ed-b924-1239d0255272, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, skip-cert-verify: true}
 
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
-      - Linode Google
-      - Linode Microsoft
-      - Banten Google
-      - Banten Microsoft
-      - He Google
-      - He Microsoft
-      - Biznet Google
-      - Biznet Microsoft
-      - OVH Google
-      - OVH Microsoft
+      - LINODE GOOGLE
+      - LINODE MICROSOFT
+      - OVH GOOGLE 
+      - OVH MICROSOFT 
+      - HE GOOGLE 
+      - HE MICROSOFT 
+      - BIZNET GOOGLE 
+      - BIZNET MICROSOFT 
+      - HERZA GOOGLE 
+      - HERZA MICROSOFT 
 
 rule-providers:
   reject:
