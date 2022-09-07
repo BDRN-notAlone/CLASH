@@ -2,62 +2,77 @@ port: 7890
 socks-port: 7891
 redir-port: 7892
 mixed-port: 7893
-tproxy-port: 7895
-ipv6: false
 mode: rule
 log-level: silent
 allow-lan: true
 external-controller: 0.0.0.0:9090
-secret: ""
 bind-address: "*"
-unified-delay: true
-profile:
-  store-selected: true
+ipv6: false
 dns:
-  enable: true
-  ipv6: false
-  enhanced-mode: redir-host
-  listen: 0.0.0.0:7874
-  nameserver:
-    - 8.8.8.8
-    - 1.0.0.1
-    - https://dns.google/dns-query
-  fallback:
-    - 1.1.1.1
-    - 8.8.4.4
-    - https://cloudflare-dns.com/dns-query
-    - 112.215.203.254
-  default-nameserver:
-    - 8.8.8.8
-    - 1.1.1.1
-    - 112.215.203.254
+enable: true
+ipv6: false
+enhanced-mode: redir-host
+listen: 0.0.0.0:7894
+fallback-filter:
+geoip: false
+ipcidr:
+- 240.0.0.0/4
+nameserver:
+- https://puredns.org/dns-query
+- https://cloudflare-dns.com/dns-query
+- https://dns.google/dns-query
+- tls://puredns.org:853
+- tls://1.1.1.1:853
+- tls://8.8.8.8:853
+fallback:
+- tcp://108.137.44.39
+- tcp://108.137.44.9
+- tcp://1.1.1.1
+- tcp://8.8.8.8
+- 1.1.1.1
+- 8.8.8.8
+- 2001:4860:4860::8888
+- 2406:da19:66f:e810:2f1b:9ce8:a5f1:132f
+tun:
+enable: true
+stack: system
+macOS-auto-route: true
+macOS-auto-detect-interface: true
+dns-hijack:
+- tcp://108.137.44.39:53
+experimental:
+interface-name: en0
 
 proxies:
-  - {name: LINODE GOOGLE, server: trojan1.udpgw.com, port: 443, udp: true, type: trojan, password: 243f6780-2084-11ed-8d50-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
-  - {name: HERZA GOOGLE, server: idtj-herza.bonds.id, port: 443, udp: true, type: trojan, password: 72d72f00-2084-11ed-be15-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
-  - {name: BIZNET GOOGLE, server: id2-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 9aa5ab20-2084-11ed-992a-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
-  - {name: OVH GOOGLE, server: sgovh-trojan.bonds.id, port: 443, udp: true, type: trojan, password: adfc8090-2084-11ed-a545-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
-  - {name: HE GOOGLE, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: c39c7700-2084-11ed-b924-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
-  - {name: LINODE MICROSOFT, server: trojan1.udpgw.com, port: 443, udp: true, type: trojan, password: 243f6780-2084-11ed-8d50-1239d0255272, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, skip-cert-verify: true}
-  - {name: HERZA MICROSOFT, server: idtj-herza.bonds.id, port: 443, udp: true, type: trojan, password: 72d72f00-2084-11ed-be15-1239d0255272, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, skip-cert-verify: true}
-  - {name: BIZNET MICROSOFT, server: id2-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 9aa5ab20-2084-11ed-992a-1239d0255272, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, skip-cert-verify: true}
-  - {name: OVH MICROSOFT, server: sgovh-trojan.bonds.id, port: 443, udp: true, type: trojan, password: adfc8090-2084-11ed-a545-1239d0255272, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, skip-cert-verify: true}
-  - {name: HE MICROSOFT, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: c39c7700-2084-11ed-b924-1239d0255272, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, skip-cert-verify: true}
+- {name: LINODE GOOGLE, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: 8cbc7f30-2e7c-11ed-b495-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
+- {name: LINODE MICROSOFT, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: a79da040-2e7c-11ed-91c2-1239d0255272, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, skip-cert-verify: true}
+- {name: OVH GOOGLE, server: sgovh-trojan.bonds.id, port: 443, udp: true, type: trojan, password: c764ebc0-2e7c-11ed-b17a-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
+- {name: OVH MICROSOFT, server: sgovh-trojan.bonds.id, port: 443, udp: true, type: trojan, password: d3c58ae0-2e7c-11ed-a161-1239d0255272, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, skip-cert-verify: true}
+- {name: HE GOOGLE, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: e6e030b0-2e7c-11ed-b16c-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
+- {name: HE MICROSOFT, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: eef65900-2e7c-11ed-bc5c-1239d0255272, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, skip-cert-verify: true}
+- {name: BIZNET GOOGLE, server: id2-trojan.bonds.id, port: 443, udp: true, type: trojan, password: fdb25580-2e7c-11ed-b96c-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
+- {name: BIZNET MICROSOFT, server: id2-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 067efd00-2e7d-11ed-bc31-1239d0255272, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, skip-cert-verify: true}
+- {name: IKD GOOGLE, server: idtj-ikd.bonds.id, port: 443, udp: true, type: trojan, password: 193ba7c0-2e7d-11ed-a396-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
+- {name: IKD MICROSOFT, server: idtj-ikd.bonds.id, port: 443, udp: true, type: trojan, password: 21887810-2e7d-11ed-918b-1239d0255272, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, skip-cert-verify: true}
+- {name: HERZA GOOGLE, server: idtj-herza.bonds.id, port: 443, udp: true, type: trojan, password: 33bbf9f0-2e7d-11ed-b16e-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
+- {name: HERZA MICROSOFT, server: idtj-herza.bonds.id, port: 443, udp: true, type: trojan, password: 406844a0-2e7d-11ed-8bf9-1239d0255272, sni: trouter2-azsc-krce-3-b.trouter.teams.microsoft.com, skip-cert-verify: true}
 
 proxy-groups:
-  - name: PROXY
-    type: select
-    proxies:
-      - LINODE GOOGLE
-      - LINODE MICROSOFT
-      - OVH GOOGLE 
-      - OVH MICROSOFT 
-      - HE GOOGLE 
-      - HE MICROSOFT 
-      - BIZNET GOOGLE 
-      - BIZNET MICROSOFT 
-      - HERZA GOOGLE 
-      - HERZA MICROSOFT 
+- name: PROXY
+type: select
+proxies:
+- LINODE GOOGLE
+- LINODE MICROSOFT
+- OVH GOOGLE
+- OVH MICROSOFT
+- HE GOOGLE
+- HE MICROSOFT
+- BIZNET GOOGLE
+- BIZNET MICROSOFT
+- IKD GOOGLE
+- IKD MICROSOFT
+- HERZA GOOGLE
+- HERZA MICROSOFT
 
 rule-providers:
   reject:
