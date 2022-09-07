@@ -60,7 +60,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   type: select
-   proxies:
+  proxies:
      - LINODE GOOGLE
      - LINODE MICROSOFT
      - OVH GOOGLE
