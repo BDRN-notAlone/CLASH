@@ -9,35 +9,35 @@ external-controller: 0.0.0.0:9090
 bind-address: "*"
 ipv6: false
 dns:
-enable: true
-ipv6: false
-enhanced-mode: redir-host
-listen: 0.0.0.0:7894
-fallback-filter:
-geoip: false
-ipcidr:
-- 240.0.0.0/4
-nameserver:
-- https://puredns.org/dns-query
-- https://cloudflare-dns.com/dns-query
-- https://dns.google/dns-query
-- tls://puredns.org:853
-- tls://1.1.1.1:853
-- tls://8.8.8.8:853
-fallback:
-- tcp://108.137.44.39
-- tcp://108.137.44.9
-- tcp://1.1.1.1
-- tcp://8.8.8.8
-- 1.1.1.1
-- 8.8.8.8
-- 2001:4860:4860::8888
-- 2406:da19:66f:e810:2f1b:9ce8:a5f1:132f
+  enable: true
+  ipv6: false
+  enhanced-mode: redir-host
+  listen: 0.0.0.0:7894
+  fallback-filter:
+  geoip: false
+  ipcidr:
+    - 240.0.0.0/4
+  nameserver:
+    - https://puredns.org/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
+    - tls://puredns.org:853
+    - tls://1.1.1.1:853
+    - tls://8.8.8.8:853
+  fallback:
+    - tcp://108.137.44.39
+    - tcp://108.137.44.9
+    - tcp://1.1.1.1
+    - tcp://8.8.8.8
+    - 1.1.1.1
+    - 8.8.8.8
+    - 2001:4860:4860::8888
+    - 2406:da19:66f:e810:2f1b:9ce8:a5f1:132f
 tun:
-enable: true
-stack: system
-macOS-auto-route: true
-macOS-auto-detect-interface: true
+  enable: true
+  stack: system
+  macOS-auto-route: true
+  macOS-auto-detect-interface: true
 dns-hijack:
 - tcp://108.137.44.39:53
 experimental:
