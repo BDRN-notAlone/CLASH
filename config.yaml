@@ -42,15 +42,15 @@ experimental:
   interface-name: en0
 
 proxies:
-  - {name: trojan2.udpgw.com, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: 724f7ae0-341b-11ed-8ff0-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
-  - {name: SG Trojan OVH, server: sgovh-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 981222f0-341b-11ed-abdb-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
+  - {name: AKRAB LINODE, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: 724f7ae0-341b-11ed-8ff0-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
+  - {name: AKRAB OVH, server: sgovh-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 981222f0-341b-11ed-abdb-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
 
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
-      - trojan2.udpgw.com
-      - SG Trojan OVH
+      - AKRAB LINODE
+      - AKRAB OVH
 
 rules:
  - MATCH,PROXY
