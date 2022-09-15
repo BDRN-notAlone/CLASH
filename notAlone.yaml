@@ -72,6 +72,11 @@ proxy-groups:
      - HERZA GOOGLE
      - HERZA MICROSOFT
 
+- name: ADS
+  type: select
+  proxies:
+     - REJECT
+     - PROXY
 rule-providers:
   reject:
     type: file
@@ -81,6 +86,6 @@ rule-providers:
     interval: 86400
     
 rules:
-  - RULE-SET,reject,REJECT
+  - RULE-SET,reject,ADS
   - DOMAIN,192.168.8.1/html,DIRECT
   - MATCH,PROXY
