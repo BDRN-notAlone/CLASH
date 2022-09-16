@@ -21,8 +21,6 @@ install dan buka aplikasinya
 - save dengan menekan ikon dipojok kanan atas
 - setelah profil tersimpan, kembali ke halaman utama dan langsung tinggal pencet start 
 - terus buka bagian menu proxy pilih sesuai paket kalian, lalu pencet logo petir kalo keluar angkanya berarti konek
-# Terimaksih
-mohon donasinya melalui gopay atau shopeepay di nomor 082239563924 agar config nya bisa terus saya update
 # Kontak saya
 ada yang perlu ditanyakan bisa hubungi saya melalui kontak saya dibawah ini
 - <a href="https://wa.me/6285173088582">Whatsapp</a>
