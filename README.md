@@ -1,11 +1,9 @@
 # Tutorial &amp; Config Clash for Android
-khusus untuk XL Paket Flex dan paket Akrab
+khusus untuk XL Paket Akrab
 
 # Cara daftar paket
-- XL FLEX bisa beli di konter atau via jasa tembak
 - XL AKRAB bisa beli di Myxl (satu paket bisa untuk 2 kartu)
-- untuk XL FLEX limit pemakaian 2gb/hari + kuota WhatsApp LINE 60gb/perbulan
-- untuk XL AKRAB limit 25gb/hari dipakai berasama
+- XL AKRAB limit kuota bonusnya 25gb/hari dipakai bersama 
 # DOWNLOAD aplikasi Clash
 bisa download di <a href="https://play.google.com/store/apps/details?id=com.github.kr328.clash">playstore</a> atau <a href="https://github.com/Kr328/ClashForAndroid/releases">disini</a>
 sesuaikan dengan chipset hp kalian atau bisa pilih yang premium universal release
@@ -20,7 +18,7 @@ install dan buka aplikasinya
 - untuk name isi terserah kalian
 - save dengan menekan ikon dipojok kanan atas
 - setelah profil tersimpan, kembali ke halaman utama dan langsung tinggal pencet start 
-- terus buka bagian menu proxy pilih sesuai paket kalian, lalu pencet logo petir kalo keluar angkanya berarti konek
+- terus buka bagian menu proxy pilih server yang kalian mau, lalu pencet logo petir kalo keluar angkanya berarti konek
 # Kontak saya
 ada yang perlu ditanyakan bisa hubungi saya melalui kontak saya dibawah ini
 - <a href="https://wa.me/6285173088582">Whatsapp</a>
