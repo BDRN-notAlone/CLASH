@@ -32,63 +32,29 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - name: LINODE
-    server: trojan3.udpgw.com
-    port: 443
-    type: trojan
-    password: 0180b8f0-3fc5-11ed-a85a-1239d0255272
-    skip-cert-verify: true
-    sni: kh.google.com
-    udp: true
-  - name: OVH
-    server: sgovh-trojan.bonds.id
-    port: 443
-    type: trojan
-    password: 4912e3b0-3fc5-11ed-85db-1239d0255272
-    skip-cert-verify: true
-    sni: kh.google.com
-    udp: true
-  - name: HE
-    server: sg1-trojan.bonds.id
-    port: 443
-    type: trojan
-    password: 651ed850-3fc5-11ed-9899-1239d0255272
-    skip-cert-verify: true
-    sni: kh.google.com
-    udp: true
-  - name: BIZNET
-    server: id2-trojan.bonds.id
-    port: 443
-    type: trojan
-    password: 8d6881a0-3fc5-11ed-9812-1239d0255272
-    skip-cert-verify: true
-    sni: kh.google.com
-    udp: true
-  - name: HERZA
-    server: idtj-herza.bonds.id
-    port: 443
-    type: trojan
-    password: b29307f0-3fc5-11ed-b6b9-1239d0255272
-    skip-cert-verify: true
-    sni: kh.google.com
-    udp: true
-  - name: IKD
-    server: idtj-ikd.bonds.id
-    port: 443
-    type: trojan
-    password: d100a130-3fc5-11ed-80a4-1239d0255272
-    skip-cert-verify: true
-    sni: kh.google.com
-    udp: true
+  - {name: SG OVH, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: eed7bb40-4cef-11ed-9dfc-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: SG LINODE, server: trojan2.udpgw.com, port: 443, type: trojan, password: 6c6d8180-4cef-11ed-a168-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: ID IKD, server: idtj-ikd.bonds.id, port: 443, type: trojan, password: a934f870-4cef-11ed-997f-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: ID HERZA, server: idtj-herza.bonds.id, port: 443, type: trojan, password: be827d20-4cef-11ed-9e81-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
-      - LINODE
-      - OVH
-      - HE
-      - BIZNET
-      - HERZA
-      - IKD
+      - SG OVH
+      - SG LINODE
+      - ID IKD
+      - ID HERZA
+      - BEST-PING
+      - DIRECT
+  - name: BEST-PING
+    type: url-test
+    url: http://hi.bonds.id/ping
+    interval: 300
+    tolerance: 50
+    proxies:
+      - SG OVH
+      - SG LINODE
+      - ID IKD
+      - ID HERZA
 rules:
   - MATCH,PROXY
