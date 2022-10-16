@@ -34,8 +34,8 @@ dns:
 proxies:
   - {name: OVH GOOGLE, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: c8a88890-3fbe-11ed-963f-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
   - {name: OVH MICROSOFT, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: e63b1840-3fbe-11ed-b475-1239d0255272, skip-cert-verify: true, sni: teams.microsoft.com, udp: true}
-  - {name: DO GOOGLE, server: trojan1.udpgw.com, port: 443, udp: true, type: trojan, password: 3c351b20-481e-11ed-a3b7-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
-  - {name: DO MICROSOFT, server: trojan1.udpgw.com, port: 443, udp: true, type: trojan, password: 66b0a670-4820-11ed-b973-1239d0255272, sni: teams.microsoft.com, skip-cert-verify: true}
+  - {name: LINODE GOOGLE, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: b29b4a70-4cee-11ed-bd33-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
+  - {name: LINODE MICROSOFT, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: c47b8d20-4cee-11ed-ad99-1239d0255272, sni: teams.microsoft.com, skip-cert-verify: true}
   - {name: HE 1 GOOGLE, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: 4cfb5440-3fbf-11ed-afa2-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
   - {name: HE 1 MICROSOFT, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: 673126b0-3fbf-11ed-b151-1239d0255272, skip-cert-verify: true, sni: teams.microsoft.com, udp: true}
   - {name: HE 2 GOOGLE, server: sg2-trojan.bonds.id, port: 443, type: trojan, password: 0a405f90-3fbf-11ed-ad3c-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
@@ -60,8 +60,8 @@ proxy-groups:
     proxies:
       - OVH GOOGLE
       - OVH MICROSOFT
-      - DO GOOGLE
-      - DO MICROSOFT
+      - LINODE GOOGLE
+      - LINODE MICROSOFT
       - HE 1 GOOGLE
       - HE 1 MICROSOFT
       - HE 2 GOOGLE
