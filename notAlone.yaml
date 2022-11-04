@@ -32,54 +32,25 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - {name: OVH GOOGLE, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: c8a88890-3fbe-11ed-963f-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: OVH MICROSOFT, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: e63b1840-3fbe-11ed-b475-1239d0255272, skip-cert-verify: true, sni: teams.microsoft.com, udp: true}
-  - {name: LINODE GOOGLE, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: b29b4a70-4cee-11ed-bd33-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
-  - {name: LINODE MICROSOFT, server: trojan2.udpgw.com, port: 443, udp: true, type: trojan, password: c47b8d20-4cee-11ed-ad99-1239d0255272, sni: teams.microsoft.com, skip-cert-verify: true}
-  - {name: HE 1 GOOGLE, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: 4cfb5440-3fbf-11ed-afa2-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: HE 1 MICROSOFT, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: 673126b0-3fbf-11ed-b151-1239d0255272, skip-cert-verify: true, sni: teams.microsoft.com, udp: true}
-  - {name: HE 2 GOOGLE, server: sg2-trojan.bonds.id, port: 443, type: trojan, password: 0a405f90-3fbf-11ed-ad3c-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: HE 2 MICROSOFT, server: sg2-trojan.bonds.id, port: 443, type: trojan, password: 21516530-3fbf-11ed-9aad-1239d0255272, skip-cert-verify: true, sni: teams.microsoft.com, udp: true}
-  - {name: HE 3 GOOGLE, server: sg3-trojan.bonds.id, port: 443, type: trojan, password: 8ee75540-3fbf-11ed-98e8-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: HE 3 MICROSOFT, server: sg3-trojan.bonds.id, port: 443, type: trojan, password: b3cea820-3fbf-11ed-81fc-1239d0255272, skip-cert-verify: true, sni: teams.microsoft.com, udp: true}
-  - {name: CONTABO GOOGLE, server: sg8-trojan.bonds.id, port: 443, type: trojan, password: 0ee45f20-3e62-11ed-baf6-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: CONTABO MICROSOFT, server: sg8-trojan.bonds.id, port: 443, type: trojan, password: 327adea0-3e62-11ed-b8c8-1239d0255272, skip-cert-verify: true, sni: teams.microsoft.com, udp: true}
-  - {name: HE MUX GOOGLE, server: sg6-trojan.bonds.id, port: 443, type: trojan, password: 6cf45230-3e62-11ed-b075-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: HE MUX MICROSOFT, server: sg6-trojan.bonds.id, port: 443, type: trojan, password: 9619d730-3e62-11ed-b50f-1239d0255272, skip-cert-verify: true, sni: teams.microsoft.com, udp: true}
-  - {name: HERZA GOOGLE, server: idtj-herza.bonds.id, port: 443, type: trojan, password: d52d4b20-3e60-11ed-b192-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: HERZA MICROSOFT, server: idtj-herza.bonds.id, port: 443, type: trojan, password: 0176c2a0-3e61-11ed-9bee-1239d0255272, skip-cert-verify: true, sni: teams.microsoft.com, udp: true}
-  - {name: IKD GOOGLE, server: idtj-ikd.bonds.id, port: 443, type: trojan, password: 9ded94d0-3e61-11ed-82aa-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: IKD MICROSOFT, server: idtj-ikd.bonds.id, port: 443, type: trojan, password: e3f4c6f0-3e61-11ed-b4ec-1239d0255272, skip-cert-verify: true, sni: teams.microsoft.com, udp: true}
-  - {name: BIZNET BANTEN GOOGLE, server: id5-trojan.bonds.id, port: 443, type: trojan, password: 38759d20-3e61-11ed-ad26-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: BIZNET BANTEN MICROSOFT, server: id5-trojan.bonds.id, port: 443, type: trojan, password: 6c6d7750-3e61-11ed-9e34-1239d0255272, skip-cert-verify: true, sni: teams.microsoft.com, udp: true}
-  - {name: BIZNET JKT GOOGLE, server: id2-trojan.bonds.id, port: 443, type: trojan, password: d0ec77e0-3fc1-11ed-94f6-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: BIZNET JKT MICROSOFT, server: id2-trojan.bonds.id, port: 443, type: trojan, password: ef79acd0-3fc1-11ed-9978-1239d0255272, skip-cert-verify: true, sni: teams.microsoft.com, udp: true}
+  - {name: popok, server: 162.159.138.78, port: 443, type: trojan, password: cc2d22a0-5618-11ed-9062-1239d0255272, skip-cert-verify: true, sni: space.byu.id, network: ws, ws-opts: {path: wss://space.byu.id/howdy, headers: {Host: idtj-bogor.bonds.id}}, udp: true}
+  - {name: gggl, server: idtj-bogor.bonds.id, port: 443, type: trojan, password: e857eaf0-5618-11ed-85d9-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: mcf, server: idtj-bogor.bonds.id, port: 443, type: trojan, password: 0b075770-5619-11ed-86b2-1239d0255272, skip-cert-verify: true, sni: teams.microsoft.com, udp: true}
+  - {name: Bogor 2, server: idtj-bogor.bonds.id, port: 443, type: trojan, password: 43146c50-5619-11ed-b52f-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: bgir juga, server: idtj-bogor.bonds.id, port: 443, type: trojan, password: 5324f380-5619-11ed-a6cc-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: linode, server: trojan1.udpgw.com, port: 443, type: trojan, password: 98fdaec0-5bc8-11ed-abff-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: ovh, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: d8cf8540-5bc8-11ed-b5e0-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: he, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: 2aaa6a60-5bc9-11ed-91ea-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
-      - OVH GOOGLE
-      - OVH MICROSOFT
-      - LINODE GOOGLE
-      - LINODE MICROSOFT
-      - HE 1 GOOGLE
-      - HE 1 MICROSOFT
-      - HE 2 GOOGLE
-      - HE 2 MICROSOFT
-      - HE 3 GOOGLE
-      - HE 3 MICROSOFT
-      - CONTABO GOOGLE
-      - CONTABO MICROSOFT
-      - HE MUX GOOGLE
-      - HE MUX MICROSOFT
-      - HERZA GOOGLE
-      - HERZA MICROSOFT
-      - IKD GOOGLE
-      - IKD MICROSOFT
-      - BIZNET BANTEN GOOGLE
-      - BIZNET BANTEN MICROSOFT
-      - BIZNET JKT GOOGLE
-      - BIZNET JKT MICROSOFT
+      - gggl
+      - mcf
+      - Bogor 2
+      - bgir juga
+      - linode
+      - ovh
+      - he
   - name: ADS
     type: select
     proxies:
