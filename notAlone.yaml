@@ -32,9 +32,6 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - {name: popok, server: 162.159.138.78, port: 443, type: trojan, password: cc2d22a0-5618-11ed-9062-1239d0255272, skip-cert-verify: true, sni: space.byu.id, network: ws, ws-opts: {path: wss://space.byu.id/howdy, headers: {Host: idtj-bogor.bonds.id}}, udp: true}
-  - {name: gggl, server: idtj-bogor.bonds.id, port: 443, type: trojan, password: e857eaf0-5618-11ed-85d9-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: mcf, server: idtj-bogor.bonds.id, port: 443, type: trojan, password: 0b075770-5619-11ed-86b2-1239d0255272, skip-cert-verify: true, sni: teams.microsoft.com, udp: true}
   - {name: Bogor 2, server: idtj-bogor.bonds.id, port: 443, type: trojan, password: 43146c50-5619-11ed-b52f-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
   - {name: bgir juga, server: idtj-bogor.bonds.id, port: 443, type: trojan, password: 5324f380-5619-11ed-a6cc-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
   - {name: linode, server: trojan1.udpgw.com, port: 443, type: trojan, password: 98fdaec0-5bc8-11ed-abff-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
@@ -44,8 +41,6 @@ proxy-groups:
   - name: PROXY
     type: select
     proxies:
-      - gggl
-      - mcf
       - Bogor 2
       - bgir juga
       - linode
