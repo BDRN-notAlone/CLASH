@@ -32,29 +32,20 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - {name: SG OVH, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: eed7bb40-4cef-11ed-9dfc-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: SG LINODE, server: trojan2.udpgw.com, port: 443, type: trojan, password: 6c6d8180-4cef-11ed-a168-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: ID IKD, server: idtj-ikd.bonds.id, port: 443, type: trojan, password: a934f870-4cef-11ed-997f-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: ID HERZA, server: idtj-herza.bonds.id, port: 443, type: trojan, password: be827d20-4cef-11ed-9e81-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: HE, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: 6582de70-607a-11ed-83b8-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: OVH, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: a44239f0-607a-11ed-a445-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: SG HE, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: f2c50bb0-6406-11ed-be0d-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: SG OVH, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: d1240d90-6406-11ed-8ee4-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: ID IKD, server: idtj-ikd.bonds.id, port: 443, type: trojan, password: 0a53f810-6407-11ed-bf0c-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
+      - HE
+      - OVH
+      - SG HE
       - SG OVH
-      - SG LINODE
       - ID IKD
-      - ID HERZA
-      - BEST-PING
       - DIRECT
-  - name: BEST-PING
-    type: url-test
-    url: http://hi.bonds.id/ping
-    interval: 300
-    tolerance: 50
-    proxies:
-      - SG OVH
-      - SG LINODE
-      - ID IKD
-      - ID HERZA
 rules:
   - MATCH,PROXY
