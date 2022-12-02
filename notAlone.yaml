@@ -32,20 +32,27 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - {name: Bogor 2, server: idtj-bogor.bonds.id, port: 443, type: trojan, password: 43146c50-5619-11ed-b52f-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: bgir juga, server: idtj-bogor.bonds.id, port: 443, type: trojan, password: 5324f380-5619-11ed-a6cc-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: linode, server: trojan1.udpgw.com, port: 443, type: trojan, password: 98fdaec0-5bc8-11ed-abff-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: ovh, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: d8cf8540-5bc8-11ed-b5e0-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: he, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: 2aaa6a60-5bc9-11ed-91ea-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: ovh 1, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: ea659890-7238-11ed-bd37-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: he 1, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: 845d4af0-7239-11ed-af25-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: ovh 2, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: 0fd26ca0-7239-11ed-bafa-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: he 2, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: 6d870620-7239-11ed-90d7-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: ovh 3, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: 32b56de0-7239-11ed-b8b8-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: he 3, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: 9302e960-7239-11ed-8abb-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: hrz, server: idtj-herza.bonds.id, port: 443, type: trojan, password: c274c000-7239-11ed-9ffc-1239d0255272, skip-cert-verify: true, sni: wcpstatic.microsoft.com, udp: true}
+  - {name: ikd, server: idtj-ikd.bonds.id, port: 443, type: trojan, password: f87f8a30-7239-11ed-bd61-1239d0255272, skip-cert-verify: true, sni: wcpstatic.microsoft.com, udp: true}
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
-      - Bogor 2
-      - bgir juga
-      - linode
-      - ovh
-      - he
+      - ovh 1
+      - he 1
+      - ovh 2
+      - he 2
+      - ovh 3
+      - he 3
+      - hrz
+      - ikd
+      - DIRECT
   - name: ADS
     type: select
     proxies:
