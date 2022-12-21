@@ -32,21 +32,13 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - {name: satu, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: ad8d5810-6e38-11ed-912c-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: dua, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: bdbc04b0-6e38-11ed-ba63-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: tiga, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: e52c3bd0-6e38-11ed-8b5b-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: empat, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: 0a8a33a0-6e39-11ed-adc1-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: lima, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: 1dfa7210-6e39-11ed-9566-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: enam, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: 2fb9f090-6e39-11ed-ad10-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: kuota WhatsApp, server: sg-ovh1.vmess.sbs, port: 80, type: vmess, uuid: 5c5a31b0-80ee-11ed-b634-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: c.whatsapp.net, network: ws, ws-opts: {path: /chat, headers: {Host: c.whatsapp.net}}, udp: true}
+  - {name: Akrab, server: trojan3.udpgw.com, port: 443, type: trojan, password: b9f7f9a0-80ed-11ed-9040-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
-      - satu
-      - dua
-      - tiga
-      - empat
-      - lima
-      - enam
+      - kuota WhatsApp
+      - Akrab
 rules:
   - MATCH,PROXY
