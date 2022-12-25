@@ -32,27 +32,20 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - {name: ovh 1, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: ea659890-7238-11ed-bd37-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: he 1, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: 845d4af0-7239-11ed-af25-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: ovh 2, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: 0fd26ca0-7239-11ed-bafa-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: he 2, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: 6d870620-7239-11ed-90d7-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: ovh 3, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: 32b56de0-7239-11ed-b8b8-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: he 3, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: 9302e960-7239-11ed-8abb-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: hrz, server: idtj-herza.bonds.id, port: 443, type: trojan, password: c274c000-7239-11ed-9ffc-1239d0255272, skip-cert-verify: true, sni: wcpstatic.microsoft.com, udp: true}
-  - {name: ikd, server: idtj-ikd.bonds.id, port: 443, type: trojan, password: f87f8a30-7239-11ed-bd61-1239d0255272, skip-cert-verify: true, sni: wcpstatic.microsoft.com, udp: true}
+  - {name: 1, server: sg3-trojan.bonds.id, port: 443, type: trojan, password: 7e00af20-845b-11ed-9e76-1239d0255272, skip-cert-verify: true, sni: teams.microsoft.com, udp: true}
+  - {name: 2, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: b8a6c190-845b-11ed-aec8-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: 3, server: sg2-trojan.bonds.id, port: 443, type: trojan, password: 94692190-845b-11ed-832f-1239d0255272, skip-cert-verify: true, sni: teams.microsoft.com, udp: true}
+  - {name: 4, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: d0f2e6a0-845b-11ed-a4ad-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: 5, server: idtj-herza.bonds.id, port: 443, type: trojan, password: 60f1e4e0-845b-11ed-b059-1239d0255272, skip-cert-verify: true, sni: teams.microsoft.com, udp: true}
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
-      - ovh 1
-      - he 1
-      - ovh 2
-      - he 2
-      - ovh 3
-      - he 3
-      - hrz
-      - ikd
-      - DIRECT
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
   - name: ADS
     type: select
     proxies:
