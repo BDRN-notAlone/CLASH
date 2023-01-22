@@ -32,13 +32,17 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - {name: kuota WhatsApp, server: sg-ovh1.vmess.sbs, port: 80, type: vmess, uuid: 5c5a31b0-80ee-11ed-b634-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: c.whatsapp.net, network: ws, ws-opts: {path: /chat, headers: {Host: c.whatsapp.net}}, udp: true}
-  - {name: Akrab, server: trojan3.udpgw.com, port: 443, type: trojan, password: b9f7f9a0-80ed-11ed-9040-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: 🥭, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: a781f0c0-9aa5-11ed-bc0c-1239d0255272, skip-cert-verify: true, sni: teams.microsoft.com, udp: true}
+  - {name: 🍌, server: sg2-trojan.bonds.id, port: 443, type: trojan, password: d7f18260-9aa5-11ed-adf2-1239d0255272, skip-cert-verify: true, sni: clients5.google.com, udp: true}
+  - {name: 🍊, server: sg3-trojan.bonds.id, port: 443, type: trojan, password: 481a5e30-9aa6-11ed-83e7-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: 🍉, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: ad133da0-9aa6-11ed-ae99-1239d0255272, skip-cert-verify: true, sni: zoom.us, udp: true}
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
-      - kuota WhatsApp
-      - Akrab
+      - 🥭
+      - 🍌
+      - 🍊
+      - 🍉
 rules:
   - MATCH,PROXY
