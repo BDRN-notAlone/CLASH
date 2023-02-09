@@ -32,22 +32,22 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - {name: A, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: 8822e540-9246-11ed-8922-1239d0255272, skip-cert-verify: true, sni: teams.microsoft.com, udp: true}
-  - {name: 1, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: 7bcd6ea0-9246-11ed-abab-1239d0255272, skip-cert-verify: true, sni: clients5.google.com, udp: true}
-  - {name: 2, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: 32f97cf0-9247-11ed-9bd0-1239d0255272, skip-cert-verify: true, sni: clients5.google.com, udp: true}
-  - {name: B, server: sgovh-trojan.bonds.id, port: 443, type: trojan, password: 3de8eae0-9247-11ed-81ff-1239d0255272, skip-cert-verify: true, sni: teams.microsoft.com, udp: true}
-  - {name: 3, server: sg3-trojan.bonds.id, port: 443, type: trojan, password: 4f334370-9246-11ed-8c6c-1239d0255272, skip-cert-verify: true, sni: clients5.google.com, udp: true}
-  - {name: C, server: sg3-trojan.bonds.id, port: 443, type: trojan, password: 5e750920-9246-11ed-9e51-1239d0255272, skip-cert-verify: true, sni: teams.microsoft.com, udp: true}
+  - {name: 1, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: 7971b3e0-a87c-11ed-856f-1239d0255272, skip-cert-verify: true, sni: teams.microsoft.com, udp: true}
+  - {name: 2, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: 942731b0-a87c-11ed-aa1a-1239d0255272, skip-cert-verify: true, sni: clients5.google.com, udp: true}
+  - {name: 3, server: sg-3.test3.net, port: 443, type: trojan, password: a81280e0-a87c-11ed-aa7f-1239d0255272, skip-cert-verify: true, sni: teams.microsoft.com, udp: true}
+  - {name: 4, server: sg-3.test3.net, port: 443, type: trojan, password: 5e9ef3e0-a87c-11ed-91ce-1239d0255272, skip-cert-verify: true, sni: clients5.google.com, udp: true}
+  - {name: 5, server: trojan2.udpgw.com, port: 443, type: trojan, password: 0077d220-a87d-11ed-ab11-1239d0255272, skip-cert-verify: true, sni: teams.microsoft.com, udp: true}
+  - {name: 6, server: trojan2.udpgw.com, port: 443, type: trojan, password: e29936f0-a87c-11ed-a8cf-1239d0255272, skip-cert-verify: true, sni: clients.google.com, udp: true}
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
-      - A
       - 1
       - 2
-      - B
       - 3
-      - C
+      - 4
+      - 5
+      - 6
   - name: ADS
     type: select
     proxies:
