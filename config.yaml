@@ -32,15 +32,15 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - {name: A, server: sg-3.test3.net, port: 443, type: trojan, password: cb71d590-a993-11ed-bd8d-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: B, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: b7af1210-a993-11ed-8fda-1239d0255272, skip-cert-verify: true, sni: clients5.google.com, udp: true}
-  - {name: C, server: trojan2.udpgw.com, port: 443, type: trojan, password: 92bb55a0-a993-11ed-99d8-1239d0255272, skip-cert-verify: true, sni: teams.microsft.com, udp: true}
+  - {name: linode, server: trojan1.udpgw.com, port: 443, type: trojan, password: 8595e730-ba74-11ed-9f11-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: ovh, server: sg-3.test3.net, port: 443, type: trojan, password: d668aa90-ba74-11ed-be9b-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: he, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: eeca37e0-ba74-11ed-8af8-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
-      - A
-      - B
-      - C
+      - linode
+      - ovh
+      - he
 rules:
   - MATCH,PROXY
