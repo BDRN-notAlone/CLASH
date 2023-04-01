@@ -32,15 +32,17 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - {name: linode, server: trojan1.udpgw.com, port: 443, type: trojan, password: 8595e730-ba74-11ed-9f11-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: ovh, server: sg-3.test3.net, port: 443, type: trojan, password: d668aa90-ba74-11ed-be9b-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: he, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: eeca37e0-ba74-11ed-8af8-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: ovh, server: sg-3.test3.net, port: 443, type: trojan, password: d38d1390-d05e-11ed-a84f-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: he 1, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: c38e3820-d05e-11ed-9046-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: he 2, server: sg2-trojan.bonds.id, port: 443, type: trojan, password: 9bd2a590-d05e-11ed-9722-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: he 3, server: sg3-trojan.bonds.id, port: 443, type: trojan, password: 83a34c50-d05e-11ed-8381-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
-      - linode
       - ovh
-      - he
+      - he 1
+      - he 2
+      - he 3
 rules:
   - MATCH,PROXY
