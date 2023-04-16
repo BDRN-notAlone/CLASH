@@ -32,10 +32,11 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - {name: 1, server: sg-3.test3.net, port: 443, type: trojan, password: 6b019460-c510-11ed-9922-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: 2, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: 7f02b690-c510-11ed-9aec-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: 3, server: sg-2.test3.net, port: 443, type: trojan, password: 9d88fb60-c510-11ed-8124-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
-  - {name: 4, server: trojan2.udpgw.com, port: 443, type: trojan, password: c0e78600-c510-11ed-ab69-1239d0255272, skip-cert-verify: true, sni: kh.google.com, udp: true}
+  - {name: 1, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: ff042740-dc18-11ed-ae14-1239d0255272, skip-cert-verify: true, sni: clients5.google.com, udp: true}
+  - {name: 2, server: sg2-trojan.bonds.id, port: 443, type: trojan, password: ba4bfb80-dc18-11ed-a8df-1239d0255272, skip-cert-verify: true, sni: clients5.google.com, udp: true}
+  - {name: 3, server: sg3-trojan.bonds.id, port: 443, type: trojan, password: e5394920-dc18-11ed-bc3a-1239d0255272, skip-cert-verify: true, sni: clients5.google.com, udp: true}
+  - {name: 4, server: sg-3.test3.net, port: 443, type: trojan, password: 15ffcd20-dc19-11ed-9b85-1239d0255272, skip-cert-verify: true, sni: clients5.google.com, udp: true}
+  - {name: 5, server: id-1.test3.net, port: 443, type: trojan, password: 42f93b60-dc19-11ed-b30f-1239d0255272, skip-cert-verify: true, sni: clients5.google.com, udp: true}
 proxy-groups:
   - name: PROXY
     type: select
@@ -44,6 +45,19 @@ proxy-groups:
       - 2
       - 3
       - 4
+      - 5
+      - LOAD-BALANCE
+  - name: LOAD-BALANCE
+    type: load-balance
+    strategy: consistent-hashing
+    url: http://hi.bonds.id/ping
+    interval: 300
+    proxies:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
   - name: ADS
     type: select
     proxies:
