@@ -128,11 +128,11 @@ dns:
     - "*.mcdn.bilivideo.cn"
     - +.media.dssott.com
 proxies:
-  - {name: 1, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: ff042740-dc18-11ed-ae14-1239d0255272, skip-cert-verify: true, sni: clients5.google.com, udp: true}
-  - {name: 2, server: sg2-trojan.bonds.id, port: 443, type: trojan, password: ba4bfb80-dc18-11ed-a8df-1239d0255272, skip-cert-verify: true, sni: clients5.google.com, udp: true}
-  - {name: 3, server: sg3-trojan.bonds.id, port: 443, type: trojan, password: e5394920-dc18-11ed-bc3a-1239d0255272, skip-cert-verify: true, sni: clients5.google.com, udp: true}
-  - {name: 4, server: sg-3.test3.net, port: 443, type: trojan, password: 15ffcd20-dc19-11ed-9b85-1239d0255272, skip-cert-verify: true, sni: clients5.google.com, udp: true}
-  - {name: 5, server: id-1.test3.net, port: 443, type: trojan, password: 42f93b60-dc19-11ed-b30f-1239d0255272, skip-cert-verify: true, sni: clients5.google.com, udp: true}
+  - {name: 1, server: 103.253.24.212, port: 443, type: trojan, password: ff042740-dc18-11ed-ae14-1239d0255272, skip-cert-verify: true, sni: clients5.google.com, udp: true}
+  - {name: 2, server: 103.253.24.248, port: 443, type: trojan, password: ba4bfb80-dc18-11ed-a8df-1239d0255272, skip-cert-verify: true, sni: clients5.google.com, udp: true}
+  - {name: 3, server: 103.253.24.216, port: 443, type: trojan, password: e5394920-dc18-11ed-bc3a-1239d0255272, skip-cert-verify: true, sni: clients5.google.com, udp: true}
+  - {name: 4, server: 139.99.90.129, port: 443, type: trojan, password: 15ffcd20-dc19-11ed-9b85-1239d0255272, skip-cert-verify: true, sni: clients5.google.com, udp: true}
+  - {name: 5, server: 103.173.75.62, port: 443, type: trojan, password: 42f93b60-dc19-11ed-b30f-1239d0255272, skip-cert-verify: true, sni: clients5.google.com, udp: true}
 proxy-groups:
   - name: PROXY
     type: select
