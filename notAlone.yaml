@@ -150,7 +150,7 @@ proxies:
     type: trojan
     password: e5394920-dc18-11ed-bc3a-1239d0255272
     skip-cert-verify: true
-    sni: clients5.google.com
+    sni: meet.google.com
     udp: true
   - name: 4
     server: sg-3.test3.net
