@@ -128,66 +128,21 @@ dns:
     - "*.mcdn.bilivideo.cn"
     - +.media.dssott.com
 proxies:
-  - name: 1
-    server: sg1-trojan.bonds.id
-    port: 443
-    type: trojan
-    password: ff042740-dc18-11ed-ae14-1239d0255272
-    skip-cert-verify: true
-    sni: clients5.google.com
-    udp: true
-  - name: 2
-    server: sg2-trojan.bonds.id
-    port: 443
-    type: trojan
-    password: ba4bfb80-dc18-11ed-a8df-1239d0255272
-    skip-cert-verify: true
-    sni: clients5.google.com
-    udp: true
-  - name: 3
-    server: sg3-trojan.bonds.id
-    port: 443
-    type: trojan
-    password: e5394920-dc18-11ed-bc3a-1239d0255272
-    skip-cert-verify: true
-    sni: meet.google.com
-    udp: true
-  - name: 4
-    server: sg-3.test3.net
-    port: 443
-    type: trojan
-    password: 15ffcd20-dc19-11ed-9b85-1239d0255272
-    skip-cert-verify: true
-    sni: clients5.google.com
-    udp: true
-  - name: 5
-    server: id-1.test3.net
-    port: 443
-    type: trojan
-    password: 42f93b60-dc19-11ed-b30f-1239d0255272
-    skip-cert-verify: true
-    sni: clients5.google.com
-    udp: true
+  - {name: SG-HE 2 Trojan VPN, server: sg2-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 4ff677b0-ef36-11ed-8142-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
+  - {name: SG-HE 3 Trojan VPN, server: sg3-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 61553da0-ef36-11ed-9e1d-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
+  - {name: SG Trojan Melbi, server: sg-4.test3.net, port: 443, udp: true, type: trojan, password: 0d53e1b0-ef37-11ed-a23d-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
+  - {name: SG-HE 1 Trojan VPN, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 20544b40-ef37-11ed-80ff-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
+  - {name: SG Trojan AMP, server: sg-2.test3.net, port: 443, udp: true, type: trojan, password: 3e133250-ef37-11ed-824c-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
+
 proxy-groups:
   - name: PROXY
     type: select
     proxies:
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
-      - FALLBACK
-  - name: FALLBACK
-    type: fallback
-    url: http://hi.bonds.id/ping
-    interval: 300
-    proxies:
-      - 1
-      - 2
-      - 3
-      - 4
-      - 5
+      - SG-HE 2 Trojan VPN
+      - SG-HE 3 Trojan VPN
+      - SG Trojan Melbi
+      - SG-HE 1 Trojan VPN
+      - SG Trojan AMP
   - name: ADS
     type: select
     proxies:
