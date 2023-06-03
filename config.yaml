@@ -32,19 +32,18 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - {name: SG-HE 3 Trojan VPN, server: sg3-trojan.bonds.id, port: 443, udp: true, type: trojan, password: b2eb7070-e96d-11ed-a850-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
-  - {name: SG-HE 2 Trojan VPN, server: sg2-trojan.bonds.id, port: 443, udp: true, type: trojan, password: bf2cffe0-e96d-11ed-84dd-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
-  - {name: SG-HE 1 Trojan VPN, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: cd7cac30-e96d-11ed-837b-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
-  - {name: SG Trojan OVH, server: sg-3.test3.net, port: 443, udp: true, type: trojan, password: d884bfd0-e96d-11ed-aaf5-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
+  - {name: trojan1.udpgw.com, server: trojan1.udpgw.com, port: 443, udp: true, type: trojan, password: ca957110-01a0-11ee-b23b-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
+  - {name: SG-HE 2 Trojan VPN, server: sg2-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 73b06f30-01a1-11ee-8a50-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
 
 proxy-groups:
   - name: PROXY
-    type: select
+    type: load-balance
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    strategy: consistent-hashing
     proxies:
-      - SG-HE 3 Trojan VPN
+      - trojan1.udpgw.com
       - SG-HE 2 Trojan VPN
-      - SG-HE 1 Trojan VPN
-      - SG Trojan OVH
 rule-providers:
 
   WhatsApp:
