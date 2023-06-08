@@ -128,6 +128,10 @@ dns:
     - "*.mcdn.bilivideo.cn"
     - +.media.dssott.com
 proxies:
+
+  - {name: 443, server: cdn.noice.id, port: 443, type: vmess, uuid: 4b4c4870-061f-11ee-b136-205c6d5f5d78, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: sg-4.0rd.net, network: ws, ws-opts: {path: /ul6zxjf1, headers: {Host: sg-4.0rd.net}}, udp: true}
+
+  - {name: 80, server: cdn.noice.id, port: 80, type: vmess, uuid: 4b4c4870-061f-11ee-b136-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: sg-4.0rd.net, network: ws, ws-opts: {path: /ul6zxjf1, headers: {Host: sg-4.0rd.net}}, udp: true}
   - {name: SG-HE 2 Trojan VPN, server: sg2-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 4ff677b0-ef36-11ed-8142-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
   - {name: SG-HE 3 Trojan VPN, server: sg3-trojan.bonds.id, port: 443, udp: true, type: trojan, password: 61553da0-ef36-11ed-9e1d-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
   - {name: SG Trojan Melbi, server: sg-4.test3.net, port: 443, udp: true, type: trojan, password: 0d53e1b0-ef37-11ed-a23d-1239d0255272, sni: kh.google.com, skip-cert-verify: true}
@@ -138,6 +142,8 @@ proxy-groups:
   - name: PROXY
     type: select
     proxies:
+      - 443
+      - 80
       - SG-HE 2 Trojan VPN
       - SG-HE 3 Trojan VPN
       - SG Trojan Melbi
