@@ -32,7 +32,7 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - {name: ID Herza Trojan, server: id-1.test3.net, port: 443, udp: true, type: trojan, password: c40777c0-047a-11ee-ad18-1239d0255272, sni: media.fcgk35-1.fna.whatsapp.net, skip-cert-verify: true}
+  - {name: ID Herza Trojan, server: id-1.test3.net, port: 443, udp: true, type: trojan, password: c40777c0-047a-11ee-ad18-1239d0255272, sni: maps.googleapis.com, skip-cert-verify: true}
   - {name: SG Trojan AMP, server: sg-2.test3.net, port: 443, udp: true, type: trojan, password: d622fdb0-047a-11ee-aa20-1239d0255272, sni: media.fcgk35-1.fna.whatsapp.net, skip-cert-verify: true}
   - {name: SG-HE 1 Trojan VPN, server: sg1-trojan.bonds.id, port: 443, udp: true, type: trojan, password: eaf73e90-047a-11ee-8d08-1239d0255272, sni: media.fcgk35-1.fna.whatsapp.net, skip-cert-verify: true}
   - {name: SG-HE 2 Trojan VPN, server: sg2-trojan.bonds.id, port: 443, udp: true, type: trojan, password: ff1b0a00-047a-11ee-bc5a-1239d0255272, sni: media.fcgk35-1.fna.whatsapp.net, skip-cert-verify: true}
