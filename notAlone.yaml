@@ -43,10 +43,10 @@ proxy-groups:
   - name: PROXY 
     type: select
     proxies:
-      - R80:Vmess Singapore Melbi 2023-06-27
-      - R443:Vmess Singapore Melbi 2023-06-27
       - R80:Vmess Singapore Melbi 2023-06-27 2
       - R443:Vmess Singapore Melbi 2023-06-27 2
+      - R80:Vmess Singapore Melbi 2023-06-27
+      - R443:Vmess Singapore Melbi 2023-06-27
       - R80:Vmess Singapore Melbi 2 2023-06-22
       - Vmess USA Chicago 2023-06-28
       - Vmess Singapore Melbi 2023-06-29
