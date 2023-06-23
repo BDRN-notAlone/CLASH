@@ -2,8 +2,7 @@
 khusus untuk XL Paket Akrab
 
 # Cara daftar paket
-- XL AKRAB bisa beli di Myxl (satu paket bisa untuk 2 kartu)
-- XL AKRAB limit kuota bonusnya 25gb/hari dipakai bersama 
+- XL AKRAB bisa beli di Myxl (satu paket bisa untuk 2 kartu) 
 # DOWNLOAD aplikasi Clash
 bisa download di <a href="https://play.google.com/store/apps/details?id=com.github.kr328.clash">playstore</a> atau <a href="https://github.com/Kr328/ClashForAndroid/releases">disini</a>
 sesuaikan dengan chipset hp kalian atau bisa pilih yang premium universal release
@@ -22,4 +21,4 @@ install dan buka aplikasinya
 # Kontak saya
 ada yang perlu ditanyakan bisa hubungi saya melalui kontak saya dibawah ini
 - <a href="https://wa.me/6285173088582">Whatsapp</a>
-- <a href="https://instagram.com/junaidi2_">Instagram</a>
+- <a href="https://instagram.com/naidjiun">Instagram</a>
