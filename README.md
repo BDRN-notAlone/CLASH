@@ -21,4 +21,4 @@ install dan buka aplikasinya
 # Kontak saya
 ada yang perlu ditanyakan bisa hubungi saya melalui kontak saya dibawah ini
 - <a href="https://wa.me/6285173088582">Whatsapp</a>
-- <a href="https://instagram.com/naidjiun">Instagram</a>
+- <a href="https://instagram.com/njnnd_">Instagram</a>
