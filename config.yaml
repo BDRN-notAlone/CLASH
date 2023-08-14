@@ -32,24 +32,22 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - {name: R80:Vmess Singapore Melbi 2023-06-27, server: 104.18.1.196, port: 80, type: vmess, uuid: c43bc1c0-0eea-11ee-b132-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: sg-4.0rd.net, network: ws, ws-opts: {path: /435gfsde, headers: {Host: sg-4.0rd.net}}, udp: true}
-  - {name: R443:Vmess Singapore Melbi 2023-06-27, server: 104.18.1.196, port: 443, type: vmess, uuid: c43bc1c0-0eea-11ee-b132-205c6d5f5d78, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: sg-4.0rd.net, network: ws, ws-opts: {path: /435gfsde, headers: {Host: sg-4.0rd.net}}, udp: true}
-  - {name: R80:Vmess Singapore Melbi 2023-06-27 2, server: 104.17.3.81, port: 80, type: vmess, uuid: c43bc1c0-0eea-11ee-b132-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: sg-4.0rd.net, network: ws, ws-opts: {path: /435gfsde, headers: {Host: sg-4.0rd.net}}, udp: true}
-  - {name: R443:Vmess Singapore Melbi 2023-06-27 2, server: 104.17.3.81, port: 443, type: vmess, uuid: c43bc1c0-0eea-11ee-b132-205c6d5f5d78, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: sg-4.0rd.net, network: ws, ws-opts: {path: /435gfsde, headers: {Host: sg-4.0rd.net}}, udp: true}
-  - {name: R80:Vmess Singapore Melbi 2 2023-06-22, server: 103.172.116.133, port: 2086, type: vmess, uuid: c7b105c0-0b14-11ee-b139-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: z-p15.www.instagram.com, network: ws, ws-opts: {path: http://tsel.me/worryfree, headers: {Host: z-p15.www.instagram.com}}, udp: true}
-  - {name: Vmess USA Chicago 2023-06-28, server: 92.38.176.18, port: 2086, type: vmess, uuid: 91381dd0-1014-11ee-b039-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: z-p15.www.instagram.com, network: ws, ws-opts: {path: http://tsel.me/worryfree, headers: {Host: z-p15.www.instagram.com}}, udp: true}
-  - {name: Vmess Singapore Melbi 2023-06-29, server: 103.172.116.25, port: 2086, type: vmess, uuid: ab965350-1083-11ee-b430-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: z-p15.www.instagram.com, network: ws, ws-opts: {path: http://tsel.me/worryfree, headers: {Host: z-p15.www.instagram.com}}, udp: true}
+  - {name: pengelola 1, server: 104.17.3.81, port: 443, type: trojan, password: e2d4f420-3a73-11ee-9713-1239d0255272, skip-cert-verify: true, sni: sg3-trojan.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: sg3-trojan.bonds.id}}, udp: true}
+  - {name: anggota 1, server: 104.18.1.196, port: 443, type: trojan, password: e2d4f420-3a73-11ee-9713-1239d0255272, skip-cert-verify: true, sni: sg3-trojan.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: sg3-trojan.bonds.id}}, udp: true}
+  - {name: pengelola 2, server: 104.17.3.81, port: 443, type: trojan, password: fc703f30-3a73-11ee-a4bd-1239d0255272, skip-cert-verify: true, sni: sg2-trojan.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: sg2-trojan.bonds.id}}, udp: true}
+  - {name: anggota 2, server: 104.18.1.196, port: 443, type: trojan, password: fc703f30-3a73-11ee-a4bd-1239d0255272, skip-cert-verify: true, sni: sg2-trojan.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: sg2-trojan.bonds.id}}, udp: true}
+  - {name: pengelola 3, server: 104.17.3.81, port: 443, type: trojan, password: 1aee0ce0-3a74-11ee-8e08-1239d0255272, skip-cert-verify: true, sni: sg1-trojan.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: sg1-trojan.bonds.id}}, udp: true}
+  - {name: anggota 3, server: 104.18.1.196, port: 443, type: trojan, password: 1aee0ce0-3a74-11ee-8e08-1239d0255272, skip-cert-verify: true, sni: sg1-trojan.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: sg1-trojan.bonds.id}}, udp: true}
 proxy-groups:
-  - name: PROXY 
+  - name: PROXY
     type: select
     proxies:
-      - R80:Vmess Singapore Melbi 2023-06-27
-      - R443:Vmess Singapore Melbi 2023-06-27
-      - R80:Vmess Singapore Melbi 2023-06-27 2
-      - R443:Vmess Singapore Melbi 2023-06-27 2
-      - R80:Vmess Singapore Melbi 2 2023-06-22
-      - Vmess USA Chicago 2023-06-28
-      - Vmess Singapore Melbi 2023-06-29
+      - pengelola 1
+      - anggota 1
+      - pengelola 2
+      - anggota 2
+      - pengelola 3
+      - anggota 3
 
 rules:
  - MATCH,PROXY
