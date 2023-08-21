@@ -128,26 +128,26 @@ dns:
     - "*.mcdn.bilivideo.cn"
     - +.media.dssott.com
 proxies:
-  - {name: R80:Vmess Singapore Melbi 2023-08-22, server: 104.17.3.8.1, port: 80, type: vmess, uuid: 33a55ee0-3aef-11ee-b337-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: sg-4.0rd.net, network: ws, ws-opts: {path: /at41br0e, headers: {Host: sg-4.0rd.net}}, udp: true}
-  - {name: R443:Vmess Singapore Melbi 2023-08-22, server: 104.17.3.8.1, port: 443, type: vmess, uuid: 33a55ee0-3aef-11ee-b337-205c6d5f5d78, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: sg-4.0rd.net, network: ws, ws-opts: {path: /at41br0e, headers: {Host: sg-4.0rd.net}}, udp: true}
-  - {name: R80:Vmess Singapore Melbi 2 2023-08-22, server: 104.18.1.196, port: 80, type: vmess, uuid: e0ceac60-3aee-11ee-b932-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: sg-8.0rd.net, network: ws, ws-opts: {path: /0czbmx2n, headers: {Host: sg-8.0rd.net}}, udp: true}
-  - {name: R443:Vmess Singapore Melbi 2 2023-08-22, server: 104.17.3.81, port: 443, type: vmess, uuid: e0ceac60-3aee-11ee-b932-205c6d5f5d78, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: sg-8.0rd.net, network: ws, ws-opts: {path: /0czbmx2n, headers: {Host: sg-8.0rd.net}}, udp: true}
-  - {name: R80:Vmess Singapore Melbi 3 2023-08-22, server: 104.17.3.81, port: 80, type: vmess, uuid: f2253500-3aed-11ee-b632-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: sg-9.0rd.net, network: ws, ws-opts: {path: /lty6sn03, headers: {Host: sg-9.0rd.net}}, udp: true}
-  - {name: R443:Vmess Singapore Melbi 3 2023-08-22, server: 104.17.3.81, port: 443, type: vmess, uuid: f2253500-3aed-11ee-b632-205c6d5f5d78, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: sg-9.0rd.net, network: ws, ws-opts: {path: /lty6sn03, headers: {Host: sg-9.0rd.net}}, udp: true}
-  - {name: pengelola, server: 104.17.3.81, port: 443, type: trojan, password: 45208ce0-395b-11ee-853c-1239d0255272, skip-cert-verify: true, sni: sg1-trojan.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: sg1-trojan.bonds.id}}, udp: true}
-  - {name: anggota, server: 104.18.1.196, port: 443, type: trojan, password: 63a20d60-395b-11ee-b16d-1239d0255272, skip-cert-verify: true, sni: sg-4.test3.net, network: ws, ws-opts: {path: /howdy, headers: {Host: sg-4.test3.net}}, udp: true}
+  - {name: R80:Vmess Singapore Melbi 2023-08-28, server: 104.17.3.81, port: 80, type: vmess, uuid: 6c0a9210-3fbe-11ee-b832-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: sg-4.0rd.net, network: ws, ws-opts: {path: /d2zv8fx9, headers: {Host: sg-4.0rd.net}}, udp: true}
+  - {name: R443:Vmess Singapore Melbi 2023-08-28, server: 104.17.3.81, port: 443, type: vmess, uuid: 6c0a9210-3fbe-11ee-b832-205c6d5f5d78, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: sg-4.0rd.net, network: ws, ws-opts: {path: /d2zv8fx9, headers: {Host: sg-4.0rd.net}}, udp: true}
+  - {name: R80:Vmess Singapore Melbi 2 2023-08-28, server: 104.17.3.81, port: 80, type: vmess, uuid: aafac020-3fbe-11ee-b735-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: sg-8.0rd.net, network: ws, ws-opts: {path: /otqhi02c, headers: {Host: sg-8.0rd.net}}, udp: true}
+  - {name: R443:Vmess Singapore Melbi 2 2023-08-28, server: 104.17.3.81, port: 443, type: vmess, uuid: aafac020-3fbe-11ee-b735-205c6d5f5d78, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: sg-8.0rd.net, network: ws, ws-opts: {path: /otqhi02c, headers: {Host: sg-8.0rd.net}}, udp: true}
+  - {name: R80:Vmess Singapore Melbi 3 2023-08-28, server: 104.17.3.81, port: 80, type: vmess, uuid: d4fa7f50-3fbe-11ee-b439-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: sg-9.0rd.net, network: ws, ws-opts: {path: /qv8m6h7i, headers: {Host: sg-9.0rd.net}}, udp: true}
+  - {name: R443:Vmess Singapore Melbi 3 2023-08-28, server: 104.17.3.81, port: 443, type: vmess, uuid: d4fa7f50-3fbe-11ee-b439-205c6d5f5d78, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: sg-9.0rd.net, network: ws, ws-opts: {path: /qv8m6h7i, headers: {Host: sg-9.0rd.net}}, udp: true}
+  - {name: he 1, server: 104.17.3.81, port: 443, type: trojan, password: 1a987ce0-3fbf-11ee-865f-1239d0255272, skip-cert-verify: true, sni: sg1-trojan.bonds.id, network: ws, ws-opts: {path: /howdy, headers: {Host: sg1-trojan.bonds.id}}, udp: true}
+  - {name: melbi, server: 104.17.3.81, port: 443, type: trojan, password: 01c18650-3fbf-11ee-895f-1239d0255272, skip-cert-verify: true, sni: sg-4.test3.net, network: ws, ws-opts: {path: /howdy, headers: {Host: sg-4.test3.net}}, udp: true}
 proxy-groups:
   - name: FASTSSH-SSHKIT-HOWDY
     type: select
     proxies:
-      - R80:Vmess Singapore Melbi 2023-08-22
-      - R443:Vmess Singapore Melbi 2023-08-22
-      - R80:Vmess Singapore Melbi 2 2023-08-22
-      - R443:Vmess Singapore Melbi 2 2023-08-22
-      - R80:Vmess Singapore Melbi 3 2023-08-22
-      - R443:Vmess Singapore Melbi 3 2023-08-22
-      - pengelola
-      - anggota 
+      - R80:Vmess Singapore Melbi 2023-08-28
+      - R443:Vmess Singapore Melbi 2023-08-28
+      - R80:Vmess Singapore Melbi 2 2023-08-28
+      - R443:Vmess Singapore Melbi 2 2023-08-28
+      - R80:Vmess Singapore Melbi 3 2023-08-28
+      - R443:Vmess Singapore Melbi 3 2023-08-28
+      - he 1
+      - melbi
       - DIRECT
 rules:
   - MATCH,FASTSSH-SSHKIT-HOWDY
